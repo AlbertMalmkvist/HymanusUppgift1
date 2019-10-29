@@ -1,25 +1,8 @@
-var x = 1;
-var Label1 = document.getElementsByName("Label1");
 var Label2 = document.getElementsByName("Label2");
-var PAlingement = document.getElementsByName("PAlingement");
 for (let i = 0, length = Label2.length; i < length; i++) {
     Label2[i].style.visibility = "hidden";
 }
 function Switch() {
-    if (x == 1) {
-        Steep1();
-        x = 2;
-    } else if (x == 2) {
-        Steep2();
-        x = 3;
-    } else if (x == 3) {
-        Steep3();
-        x = 1;
-    } else {
-        document.write("Something is wrong");
-    }
-}
-function Steep1() {
     for (let i = 0, length = Label1.length; i < length; i++) {
         Label1[i].style.visibility = "hidden";
     }
