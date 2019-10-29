@@ -1,7 +1,3 @@
-var Label2 = document.getElementsByName("Label2");
-for (let i = 0, length = Label2.length; i < length; i++) {
-    Label2[i].style.visibility = "hidden";
-}
 function Switch() { 
     var Source = document.createElement("script");
     Source.src = "Support.js";
@@ -9,12 +5,21 @@ function Switch() {
     Source.id = "Source";
     document.getElementById("output").innerHTML = "";
     document.getElementById("output").appendChild(Source);
-    var Race = document.getElementByid("Race").value;
-    var SubRace = document.getElementByid("SubRace"); var Dwarf = document.getElementByid("SubDwarf"); var Elf = document.getElementByid("SubElf"); var Dragon = document.getElementByid("SubDragon"); var Gnome = document.getElementByid("SubGnome");
-
-
 }
-function Steep2() {
+
+var Label2 = document.getElementsByName("Label2");
+for (let i = 0, length = Label2.length; i < length; i++) {
+    Label2[i].style.visibility = "hidden";
+}
+var Label1 = document.getElementsByName("Label1");
+var PAlingement = document.getElementsByName("PAlingement");
+for (let i = 0, length = Label1.length; i < length; i++) {
+    Label1[i].style.visibility = "visible";
+}
+for (let i = 0, length = PAlingement.length; i < length; i++) {
+    PAlingement[i].style.visibility = "visible";
+}
+//function Steep2() {
     //var FN = document.getElementByid("FN").value; var LN = document.getElementByid("LN").value;
     //var Race = document.getElementByid("Race").value; var SRace = document.getElementByid("SRace").value;
     //var Alignment = document.getElementsByName("Alignment").value;
@@ -30,4 +35,4 @@ function Steep2() {
     //var Charisma = document.getElementByid("Charisma").value;
 
     //document.getElementByid("Conclusion").innerHTML = "Your name is "+FN+" "+LN+".<br> Your Class is";
-}
+//}

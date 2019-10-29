@@ -1,3 +1,12 @@
+
+function Switch() { 
+    var Source = document.createElement("script");
+    Source.src = "Backgroundscript2.js";
+    Source.innerHTML = null;
+    Source.id = "Source";
+    document.getElementById("output").innerHTML = "";
+    document.getElementById("output").appendChild(Source);
+}
 var Label1 = document.getElementsByName("Label1");
 var PAlingement = document.getElementsByName("PAlingement");
 for (let i = 0, length = Label2.length; i < length; i++) {
