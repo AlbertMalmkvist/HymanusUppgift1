@@ -2,56 +2,36 @@ var Label2 = document.getElementsByName("Label2");
 for (let i = 0, length = Label2.length; i < length; i++) {
     Label2[i].style.visibility = "hidden";
 }
-function Switch() {
-    for (let i = 0, length = Label1.length; i < length; i++) {
-        Label1[i].style.visibility = "hidden";
-    }
-    for (let i = 0, length = PAlingement.length; i < length; i++) {
-        PAlingement[i].style.visibility = "hidden";
-    }
-    for (let i = 0, length = Label2.length; i < length; i++) {
-        Label2[i].style.visibility = "visible";
-    }
-    var SubClass = document.getElementByid("SubClass"); var Domain = document.getElementByid("Domain"); var Origin = document.getElementByid("Origin"); var Patron = document.getElementByid("Patron"); var Fight = document.getElementByid("Fight");
-    var SubRace = document.getElementByid("SubRace"); var Dwarf = document.getElementByid("SubDwarf"); var Elf = document.getElementByid("SubElf"); var Dragon = document.getElementByid("SubDragon"); var Gnome = document.getElementByid("SubGnome");
-
+function Switch() { 
     var Class = document.getElementByid("Class").value;
+    var SubClass = document.getElementByid("SubClass");    
     if (ChClass = "Cleric") {
+        var Domain = document.getElementByid("Domain");
         SubClass.innerHTML = "Domain";
-        Patron.style.visibility = "hidden";
-        origin.style.visibility = "hidden";
-        Fight.style.visibility = "hidden";
+        Domain.style.visibility = "visible";
     }
     else if (ChClass = "Warlock") {
+        var Patron = document.getElementByid("Patron");
         SubClass.innerHTML = "Patron";
-        Fight.style.visibility = "hidden";
-        origin.style.visibility = "hidden";
-        Domain.style.visibility = "hidden";
+        Patron.style.visibility = "visible";
     }
     else if (ChClass = "Sorcerrer") {
+        var Origin = document.getElementByid("Origin");
         SubClass.innerHTML = "Sorcerous Origin";
-        Domain.style.visibility = "hidden";
-        Fight.style.visibility = "hidden";
-        Patron.style.visibility = "hidden";
+        origin.style.visibility = "visible";
     }
     else if (ChClass = "Fighter") {
+        var Fight = document.getElementByid("Fight");
         SubClass.innerHTML = "Fighting Style";
-        Domain.style.visibility = "hidden";
-        Patron.style.visibility = "hidden";
-        origin.style.visibility = "hidden";
+        Fight.style.visibility = "visible";
     } else {
-        origin.style.visibility = "hidden";
-        Domain.style.visibility = "hidden";
-        Fight.style.visibility = "hidden";
-        Patron.style.visibility = "hidden";
-        SubClass.style.visibility = "hidden";
-    }
+    }   
+    var Race = document.getElementByid("Race").value;
+    var SubRace = document.getElementByid("SubRace"); var Dwarf = document.getElementByid("SubDwarf"); var Elf = document.getElementByid("SubElf"); var Dragon = document.getElementByid("SubDragon"); var Gnome = document.getElementByid("SubGnome");
+
 
 }
 function Steep2() {
-    for (let i = 0, length = Label2.length; i < length; i++) {
-        Label2[i].style.visibility = "hidden";
-    }
     //var FN = document.getElementByid("FN").value; var LN = document.getElementByid("LN").value;
     //var Race = document.getElementByid("Race").value; var SRace = document.getElementByid("SRace").value;
     //var Alignment = document.getElementsByName("Alignment").value;
@@ -67,10 +47,4 @@ function Steep2() {
     //var Charisma = document.getElementByid("Charisma").value;
 
     //document.getElementByid("Conclusion").innerHTML = "Your name is "+FN+" "+LN+".<br> Your Class is";
-}
-function Steep3() {
-    for (let i = 0, length = Label1.length; i < length; i++) {
-        Label1[i].style.visibility = "visible";
-    }
-    //document.getElementByid("Conclusion").innerHTML = "";
 }
