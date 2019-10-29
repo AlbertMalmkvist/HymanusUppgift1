@@ -3,29 +3,12 @@ for (let i = 0, length = Label2.length; i < length; i++) {
     Label2[i].style.visibility = "hidden";
 }
 function Switch() { 
-    var Class = document.getElementByid("Class").value;
-    var SubClass = document.getElementByid("SubClass");    
-    if (ChClass = "Cleric") {
-        var Domain = document.getElementByid("Domain");
-        SubClass.innerHTML = "Domain";
-        Domain.style.visibility = "visible";
-    }
-    else if (ChClass = "Warlock") {
-        var Patron = document.getElementByid("Patron");
-        SubClass.innerHTML = "Patron";
-        Patron.style.visibility = "visible";
-    }
-    else if (ChClass = "Sorcerrer") {
-        var Origin = document.getElementByid("Origin");
-        SubClass.innerHTML = "Sorcerous Origin";
-        origin.style.visibility = "visible";
-    }
-    else if (ChClass = "Fighter") {
-        var Fight = document.getElementByid("Fight");
-        SubClass.innerHTML = "Fighting Style";
-        Fight.style.visibility = "visible";
-    } else {
-    }   
+    var Source = document.createElement("script");
+    Source.src = "Support.js";
+    Source.innerHTML = null;
+    Source.id = "Source";
+    document.getElementById("output").innerHTML = "";
+    document.getElementById("output").appendChild(Source);
     var Race = document.getElementByid("Race").value;
     var SubRace = document.getElementByid("SubRace"); var Dwarf = document.getElementByid("SubDwarf"); var Elf = document.getElementByid("SubElf"); var Dragon = document.getElementByid("SubDragon"); var Gnome = document.getElementByid("SubGnome");
 
