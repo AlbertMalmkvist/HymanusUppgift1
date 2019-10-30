@@ -20,19 +20,19 @@ for (let i = 0, length = PAlingement.length; i < length; i++) {
     PAlingement[i].style.visibility = "visible";
 }
 //function Steep2() {
-    //var FN = document.getElementByid("FN").value; var LN = document.getElementByid("LN").value;
-    //var Race = document.getElementByid("Race").value; var SRace = document.getElementByid("SRace").value;
+    //var FN = document.getElementById("FN").value; var LN = document.getElementById("LN").value;
+    //var Race = document.getElementById("Race").value; var SRace = document.getElementById("SRace").value;
     //var Alignment = document.getElementsByName("Alignment").value;
 
-    //var SubClass = document.getElementByid("SubClass").value; var Domain = document.getElementByid("Domain").value; var Origin = document.getElementByid("Origin").value; var Patron = document.getElementByid("Patron").value; var Fight = document.getElementByid("Fight").value;
-    //var Back = document.getElementByid("Back").value; var Background = document.getElementByid("Background").value;
+    //var SubClass = document.getElementById("SubClass").value; var Domain = document.getElementById("Domain").value; var Origin = document.getElementById("Origin").value; var Patron = document.getElementById("Patron").value; var Fight = document.getElementById("Fight").value;
+    //var Back = document.getElementById("Back").value; var Background = document.getElementById("Background").value;
 
-    //var Strenght = document.getElementByid("Strenght").value;
-    //var Dexterity = document.getElementByid("Dexterity").value;
-    //var Constitution = document.getElementByid("Constitution").value;
-    //var intelligence = document.getElementByid("intelligence").value;
-    //var Wisdom = document.getElementByid("Wisdom").value;
-    //var Charisma = document.getElementByid("Charisma").value;
+    //var Strenght = document.getElementById("Strenght").value;
+    //var Dexterity = document.getElementById("Dexterity").value;
+    //var Constitution = document.getElementById("Constitution").value;
+    //var intelligence = document.getElementById("intelligence").value;
+    //var Wisdom = document.getElementById("Wisdom").value;
+    //var Charisma = document.getElementById("Charisma").value;
 
-    //document.getElementByid("Conclusion").innerHTML = "Your name is "+FN+" "+LN+".<br> Your Class is";
+    //document.getElementById("Conclusion").innerHTML = "Your name is "+FN+" "+LN+".<br> Your Class is";
 //}

@@ -16,33 +16,33 @@ for (let i = 0, length = PAlingement.length; i < length; i++) {
     PAlingement[i].style.visibility = "hidden";
 }
 
-var Class = document.getElementByid("Class").value;
-var SubClass = document.getElementByid("SubClass");
-for (let index = 0; index < array.length; index++) {
+var Class = document.getElementById("Class").value;
+var SubClass = document.getElementById("SubClass");
     
+SubClass.style.visibility = "visible";
 if (Class == "Cleric") {
-    var Domain = document.getElementByid("Domain");
+    var Domain = document.getElementById("Domain");
     SubClass.innerHTML = "Domain";
     Domain.style.visibility = "visible";
 }
 else if (Class == "Warlock") {
-    var Patron = document.getElementByid("Patron");
+    var Patron = document.getElementById("Patron");
     SubClass.innerHTML = "Patron";
     Patron.style.visibility = "visible";
 }
 else if (Class == "Sorcerrer") {
-    var Origin = document.getElementByid("Origin");
+    var Origin = document.getElementById("Origin");
     SubClass.innerHTML = "Sorcerous Origin";
     origin.style.visibility = "visible";
 }
 else if (Class == "Fighter") {
-    var Fight = document.getElementByid("Fight");
+    var Fight = document.getElementById("Fight");
     SubClass.innerHTML = "Fighting Style";
     Fight.style.visibility = "visible";
 } else {
 }  
 
-var Race = document.getElementByid("Race").value;
-var SubRace = document.getElementByid("SubRace"); var Dwarf = document.getElementByid("SubDwarf"); var Elf = document.getElementByid("SubElf"); var Dragon = document.getElementByid("SubDragon"); var Gnome = document.getElementByid("SubGnome");
+var Race = document.getElementById("Race").value;
+var SubRace = document.getElementById("SubRace"); var Dwarf = document.getElementById("SubDwarf"); var Elf = document.getElementById("SubElf"); var Dragon = document.getElementById("SubDragon"); var Gnome = document.getElementById("SubGnome");
 
-} 
+ 
