@@ -66,7 +66,7 @@ else if (Class == "Fighter") {
 
 var Race = document.getElementById("Race").value;
 var SubRace = document.getElementById("SubRace");
-var SubRaceLabel = document.getElementById("SubDwarf"); 
+var SubRaceLabel = document.getElementById("SRace"); 
  if (Race == "Dwarf") {
      SubRace.style.visibility = "visible";
      var numbersR = SubRace.length;
@@ -75,7 +75,51 @@ var SubRaceLabel = document.getElementById("SubDwarf");
      SubRace.remove(2);         
          }
      }
- }  else{
-
- }
+ }  
+ else if (Race == "Elf") {
+     SubRace.style.visibility = "visible";
+     var numbersR = SubRace.length;
+     for (let i = 0; i < numbersR; i++) {
+         if (i < 2) {
+     SubRace.remove(0);         
+         }
+         if (i > 4) {
+     SubRace.remove(3); 
+         }
+     }
+ }  
+ else if (Race == "Halfling") {
+     SubRace.style.visibility = "visible";
+     var numbersR = SubRace.length;
+     for (let i = 0; i < numbersR; i++) {
+         if (i < 5) {
+     SubRace.remove(0);         
+         }
+         if (i > 6) {
+     SubRace.remove(2); 
+         }
+     }
+ }  
+ else if (Race == "Dragonborn") {
+     SubRace.style.visibility = "visible";
+     var numbersR = SubRace.length;
+     for (let i = 0; i < numbersR; i++) {
+         if (i < 7) {
+     SubRace.remove(0);         
+         }
+         if (i > 16) {
+     SubRace.remove(10); 
+         }
+     }
+ }  
+ else if (Race == "Gnome") {
+     SubRace.style.visibility = "visible";
+     var numbersR = SubRace.length;
+     for (let i = 0; i < numbersR; i++) {
+         if (i < 17) {
+     SubRace.remove(0);         
+         }
+     }
+ } 
+ else{}
  
