@@ -11,6 +11,7 @@
             <label id="LNL" name="Label1">Last Name</label>
             <input type="text" name="Label1" id="LN" ><br><br>  
             <label id="RaceL" name="Label1">Race</label>
+
             <select name="Label1" id="Race">
                 <option value="Dragonborn" >Dragonborn</option>
                 <option value="Dwarf">Dwarf</option>
@@ -21,22 +22,18 @@
                 <option value="Halfling">Halfling</option>
                 <option value="Human">Human</option>
                 <option value="Tiefling">Tiefling</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="SRace" name="Label2">Sub-Race</label>
-            <select name="Label2" id="SubDwarf">
+            <select name="Label2" id="SubRace">
                 <option value="Hill Dwarf" >Hill Dwarf</option>
                 <option value="Mountain Dwarf">Mountain Dwarf</option>
-            </select>                
-            <select name="Label2" id="SubElf">
                 <option value="High Elf" >High Elf</option>
                 <option value="Wood Elf">Wood Elf</option>
                 <option value="Dark Elf">Drow</option>
-            </select>
-                <select name="Label2" id="SubHalf">
                 <option value="Lightfoot" >Lightfoot</option>
                 <option value="Stout">Stout</option>
-            </select>
-                <select name="Label2" id="SubDragon">
                 <option value="Black" >Black</option>
                 <option value="Blue">Blue</option>
                 <option value="Brass">Brass</option>
@@ -47,11 +44,11 @@
                 <option value="Red">Red</option>
                 <option value="Silver">Silver</option>
                 <option value="White">White</option>
-            </select>
-                <select name="Label2" id="SubGnome">
                 <option value="Rock Gnome" >Rock Gnome</option>
                 <option value="Forest Gnome">Forest Gnome</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="AL" name="Label1">Alingement</label><br>
             <input type="radio" name="PAlingement" value="Good Lawful" > 
             <label id="AL" name="Label1">Good Lawful</label>
@@ -71,6 +68,7 @@
             <label id="AL" name="Label1">Evil Neutral</label>
             <input type="radio" name="PAlingement" value="Evil Chaotic"> 
             <label id="AL" name="Label1">Evil Chaotic </label><br><br>
+
             <label id="CL" name="Label1">Class</label>
             <select name="Label1" id="Class">
                 <option value="Fighter" >Fighter</option>
@@ -85,9 +83,11 @@
                 <option value="Monk">Monk</option>
                 <option value="Ranger">Ranger</option>
                 <option value="Barbarian">Barbarian</option>
-            </select><br>
-            <label  id="SubClass" name="Label2">Domain</label>
-            <select name="Label2" id="Domain">
+            </select>
+            
+            <br>
+            <label  id="SubClassLabel" name="Label2">Domain</label>
+            <select name="Label2" id="SubClass">
                 <option value="Knowledge" >Knowledge</option>
                 <option value="Life">Life</option>
                 <option value="Light">Light</option>
@@ -95,24 +95,20 @@
                 <option value="Tempest">Tempest</option>
                 <option value="Trickery">Trickery</option>
                 <option value="War">War</option>
-            </select>
-            <select name="Label2" id="Origin">
                 <option value="Draconic">Draconic Bloodline</option>
                 <option value="Wild">Wild Magic</option>
-            </select>
-            <select name="Label2" id="Patron">
                 <option value="Archfey">The Archfey</option>
                 <option value="Fiend">The Fiend</option>
                 <option value="Old One">The Great Old One</option>
-            </select>
-            <select name="Label2" id="Fight">
                 <option value="Archery">Archery</option>
                 <option value="Defense">Defense</option>
                 <option value="Dueling">Dueling</option>
                 <option value="Great">Great Weapon Fighting</option>
                 <option value="Protection">Protection</option>
                 <option value="Two-Weapon">Two-Weapon Fighting</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="Back" name="Label1">Background</label>
             <select name="Label1" id="Background">
                 <option value="Criminal">Criminal</option>
@@ -128,145 +124,83 @@
                 <option value="Charlatan">Charlatan</option>
                 <option value="Guild Artisan">Guild Artisan</option>
                 <option value="Outlander">Outlander</option>
-            </select><br><br>
+            </select>
+            
+            <br><br>
             <label id="str" name="Label1">Strenght</label>
             <select name="Label1" id="Strenght">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="1">11</option>
-                    <option value="2">12</option>
-                    <option value="3">13</option>
-                    <option value="4">14</option>
-                    <option value="5">15</option>
-                    <option value="6">16</option>
-                    <option value="7">17</option>
-                    <option value="8">18</option>
-                    <option value="9">19</option>
-                    <option value="10">20</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="dex" name="Label1">Dexterity</label>
             <select name="Label1" id="Dexterity">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="1">11</option>
-                    <option value="2">12</option>
-                    <option value="3">13</option>
-                    <option value="4">14</option>
-                    <option value="5">15</option>
-                    <option value="6">16</option>
-                    <option value="7">17</option>
-                    <option value="8">18</option>
-                    <option value="9">19</option>
-                    <option value="10">20</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="con" name="Label1">Constitution</label>
             <select name="Label1" id="Constitution">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="1">11</option>
-                    <option value="2">12</option>
-                    <option value="3">13</option>
-                    <option value="4">14</option>
-                    <option value="5">15</option>
-                    <option value="6">16</option>
-                    <option value="7">17</option>
-                    <option value="8">18</option>
-                    <option value="9">19</option>
-                    <option value="10">20</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="int" name="Label1">Intelligence</label>
             <select name="Label1" id="Intelligence">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="1">11</option>
-                    <option value="2">12</option>
-                    <option value="3">13</option>
-                    <option value="4">14</option>
-                    <option value="5">15</option>
-                    <option value="6">16</option>
-                    <option value="7">17</option>
-                    <option value="8">18</option>
-                    <option value="9">19</option>
-                    <option value="10">20</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="wis" name="Label1">Wisdom</label>
             <select name="Label1" id="Wisdom">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="1">11</option>
-                    <option value="2">12</option>
-                    <option value="3">13</option>
-                    <option value="4">14</option>
-                    <option value="5">15</option>
-                    <option value="6">16</option>
-                    <option value="7">17</option>
-                    <option value="8">18</option>
-                    <option value="9">19</option>
-                    <option value="10">20</option>
-            </select><br>
+            </select>
+            
+            <br>
             <label id="cha" name="Label1">Charisma</label>
             <select name="Label1" id="Charisma">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="1">11</option>
-                <option value="2">12</option>
-                <option value="3">13</option>
-                <option value="4">14</option>
-                <option value="5">15</option>
-                <option value="6">16</option>
-                <option value="7">17</option>
-                <option value="8">18</option>
-                <option value="9">19</option>
-                <option value="10">20</option>
-            </select><br>
+            </select>
+            <script>
+            var str = document.getElementById("Strenght"); 
+            var dex = document.getElementById("Dexterity"); 
+            var con = document.getElementById("Constitution"); 
+            var int = document.getElementById("Intelligence"); 
+            var wis = document.getElementById("Wisdom"); 
+            var cha = document.getElementById("Charisma");     
+            
+for (var i = 1; i<=20; i++){
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.text = i;
+    str.appendChild(opt);
+}       
+for (var i = 1; i<=20; i++){
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.text = i;
+    dex.appendChild(opt);
+}       
+for (var i = 1; i<=20; i++){
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.text = i;
+    con.appendChild(opt);
+}       
+for (var i = 1; i<=20; i++){
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.text = i;
+    int.appendChild(opt);
+}       
+for (var i = 1; i<=20; i++){
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.text = i;
+    wis.appendChild(opt);
+}    
+for (var i = 1; i<=20; i++){
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.text = i;
+    cha.appendChild(opt);
+}       
+</script>
+            <br>
             <button id="P1" onclick="Switch()">Change</button><br>
             <label id="Conclusion"></label>
             <div id="output">

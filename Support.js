@@ -17,32 +17,65 @@ for (let i = 0, length = PAlingement.length; i < length; i++) {
 }
 
 var Class = document.getElementById("Class").value;
+var SubClassLabel = document.getElementById("SubClassLabel");
 var SubClass = document.getElementById("SubClass");
     
 SubClass.style.visibility = "visible";
+SubClassLabel.style.visibility = "visible";
+    var numbersC = SubClass.length;
 if (Class == "Cleric") {
-    var Domain = document.getElementById("Domain");
-    SubClass.innerHTML = "Domain";
-    Domain.style.visibility = "visible";
+    SubClassLabel.innerHTML = "Domain";
+    for (let i = 0; i < numbersC; i++) {
+        if (i >= 6) {
+    SubClass.remove(7);         
+        }
+    }
 }
 else if (Class == "Warlock") {
-    var Patron = document.getElementById("Patron");
-    SubClass.innerHTML = "Patron";
-    Patron.style.visibility = "visible";
+    SubClassLabel.innerHTML = "Patron";
+    for (let i = 0; i < numbersC; i++) {
+        if (i <= 8) {
+    SubClass.remove(0);         
+        }
+        else if (i >= 11) {   
+    SubClass.remove(3);  
+        }
+    }
 }
 else if (Class == "Sorcerrer") {
-    var Origin = document.getElementById("Origin");
-    SubClass.innerHTML = "Sorcerous Origin";
-    origin.style.visibility = "visible";
+    SubClassLabel.innerHTML = "Sorcerous Origin";
+    for (let i = 0; i < numbersC; i++) {
+        if (i <= 6) {
+    SubClass.remove(0);         
+        }
+        else if (i >= 8) {   
+    SubClass.remove(2);  
+        }
+    }
 }
 else if (Class == "Fighter") {
-    var Fight = document.getElementById("Fight");
-    SubClass.innerHTML = "Fighting Style";
-    Fight.style.visibility = "visible";
-} else {
+    SubClassLabel.innerHTML = "Fighting Style";
+    for (let i = 0; i < numbersC; i++) {
+        if (i <= 11) {
+    SubClass.remove(0);         
+        }
+    }
+}
+      else {
 }  
 
 var Race = document.getElementById("Race").value;
-var SubRace = document.getElementById("SubRace"); var Dwarf = document.getElementById("SubDwarf"); var Elf = document.getElementById("SubElf"); var Dragon = document.getElementById("SubDragon"); var Gnome = document.getElementById("SubGnome");
+var SubRace = document.getElementById("SubRace");
+var SubRaceLabel = document.getElementById("SubDwarf"); 
+ if (Race == "Dwarf") {
+     SubRace.style.visibility = "visible";
+     var numbersR = SubRace.length;
+     for (let i = 0; i < numbersR; i++) {
+         if (i => 2) {
+     SubRace.remove(2);         
+         }
+     }
+ }  else{
 
+ }
  

@@ -1,3 +1,6 @@
+var news = document.getElementById("Conclusion");
+news.innerHTML = "";
+
 function Switch() { 
     var Source = document.createElement("script");
     Source.src = "Support.js";
