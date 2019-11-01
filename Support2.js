@@ -19,8 +19,8 @@ var Knowledge="Knowledge";
 opt.value = Knowledge;
 opt.text = Knowledge;
 SubClass.add(opt);
-     var opt = document.createElement("option");
-     var value="Life";
+     //var opt = document.createElement("option");
+      value="Life";
      opt.value = value;
      opt.text = value;
      SubClass.add(opt);
@@ -119,7 +119,7 @@ SubClass.add(opt);
      opt.value = value;
      opt.text = value;
      SubRace.add(opt);
-     
+
      var opt = document.createElement("option");
      value="High Elf" ;
      opt.value = value;

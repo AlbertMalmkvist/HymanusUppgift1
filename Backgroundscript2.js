@@ -2,12 +2,23 @@ var news = document.getElementById("Conclusion");
 news.innerHTML = "";
 
 function Switch() { 
+    var FN = document.getElementById("FN").value;
+    if (FN == "") {
+        
+    }
+    else{ 
+        var LN = document.getElementById("LN").value;
+        if (LN == "") {
+            
+        } else {
     var Source = document.createElement("script");
     Source.src = "Support.js";
     Source.innerHTML = null;
     Source.id = "Source";
     document.getElementById("output").innerHTML = "";
     document.getElementById("output").appendChild(Source);
+        }
+    }
 }
 
 var Label2 = document.getElementsByName("Label2");

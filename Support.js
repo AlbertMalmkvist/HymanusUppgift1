@@ -1,11 +1,19 @@
-var i = 0;
+
+
 function Switch() { 
+var Prof1 = document.getElementById("Prof1").value;
+var Prof2 = document.getElementById("Prof2").value;
+    if (Prof1 == Prof2) {
+        
+    } 
+    else {
     var Source = document.createElement("script");
     Source.src = "Support2.js";
     Source.innerHTML = null;
     Source.id = "Source";
     document.getElementById("output").innerHTML = "";
-    document.getElementById("output").appendChild(Source);
+    document.getElementById("output").appendChild(Source);        
+    }
 }
 var Label1 = document.getElementsByName("Label1");
 var PAlingement = document.getElementsByName("PAlingement");
