@@ -356,5 +356,5 @@ function Switch() {
 var Label1 = document.getElementsByName("Label1");
 var PAlingement = document.getElementsByName("PAlingement");
 for (let i = 0, length = Label2.length; i < length; i++) {
-    //Label2[i.style.visibility = "hidden";
+    Label2[i].style.visibility = "hidden";
 }
