@@ -17,9 +17,6 @@ for (let i = 0; i < 100; i++){
     Prof2.remove(0);
     Prof3.remove(0);
     Prof4.remove(0);
-    Lang1.remove(0);
-    Lang2.remove(0);
-    Lang3.remove(0);
  }        
 
 function Switch() { 

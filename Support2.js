@@ -64,28 +64,29 @@ if (y == "20") {
   
 }
 if (i == 0) {
-  var x =attribute.shift();
+  var x =attribute.pop();
   attribute.push("Strenght Modifier:"+ x);
 } else if(i == 1) {
-  var x =attribute.shift();
+  var x =attribute.pop();
   attribute.push("Dexterity Modifier:"+ x);
 } else if(i == 2){
-  var x =attribute.shift();
+  var x =attribute.pop();
   attribute.push("Constitution Modifier:"+ x);
 } else if(i == 3){
-  var x =attribute.shift();
+  var x =attribute.pop();
   attribute.push("Intelligence Modifier:"+ x);
 } else if(i == 4){
-  var x =attribute.shift();
+  var x =attribute.pop();
   attribute.push("Wisdom Modifier:"+ x);
 } else if (i == 5) {
-  var x =attribute.shift();
+  var x =attribute.pop();
   attribute.push("Charisma Modifier:"+ x);
 } else {
   
 }
 }
 chart.style.visibility="visible";
+
 chart.innerHTML = attribute.join("<br>\n")
 
 var Class = document.getElementById("Class").value;

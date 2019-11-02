@@ -33,8 +33,8 @@ var Prof4 = document.getElementById("Prof4");
 
         var opt = document.createElement("option");
     
-SubClass.style.visibility = "hidden";
-SubClassLabel.style.visibility = "hidden";
+SubClass.style.visibility = "visible";
+SubClassLabel.style.visibility = "visible";
     var numbersC = SubClass.length;
 
     if (Class=="Barbarian") {
