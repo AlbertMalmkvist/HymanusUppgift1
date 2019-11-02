@@ -18,7 +18,6 @@ SubClassLabel.style.visibility = "hidden";
 
     var numbersC = SubClass.length;
 
-
     var Prof1 = document.getElementById("Prof1");
     var Prof2 = document.getElementById("Prof2");
     var Prof3 = document.getElementById("Prof3");
@@ -1319,11 +1318,13 @@ if (Background == "Acolyte") {
 var Race = document.getElementById("Race").value;
 var SubRace = document.getElementById("SubRace");
 var SubRaceLabel = document.getElementById("SRace"); 
+var BRP = document.getElementById("BRP");
      var numbersR = SubRace.length;
 var RaceCom = ".";
 var RProf = "None";
 SubRace.style.visibility = "hidden";
 SubRaceLabel.style.visibility = "hidden";
+
  if (Race == "Dwarf") {
     SubRaceLabel.style.visibility = "visible";
      SubRace.style.visibility = "visible";
@@ -1390,7 +1391,9 @@ SubRaceLabel.style.visibility = "hidden";
      }
  } 
  else if(Race == "Halfelf"){
-
+    BRP.style.visibility = "visible";
+     Prof5.style.visibility = "visible";
+     Prof6.style.visibility = "visible";
  }
  else if(Race == "Halforc"){
     RProf = "Intimidation";
@@ -1401,7 +1404,9 @@ SubRaceLabel.style.visibility = "hidden";
 
  }
  else{}
- var ProfLabel = document.getElementById("ProfLabel";)
+ var ProfLabel = document.getElementById("ProfLabel");
+ProfLabel.style.visibility = "visible";
+
  var  Info = document.getElementById("Info");
 Info.innerHTML = "You got proficiencies in "+DProf1+" and "+DProf2+" from your background"+RaceCom;
 
@@ -1411,15 +1416,23 @@ function Switch() {
     var Prof2 = document.getElementById("Prof2").value;
     var Prof3 = document.getElementById("Prof3").value;
     var Prof4 = document.getElementById("Prof4").value;
+    var Prof5 = document.getElementById("Prof5").value;
+    var Prof6 = document.getElementById("Prof6").value;
 
     if (Class == "Rogue") {
-        if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 || DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 || DProf2 == DProf2 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
+        if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
             
-        }
+        }else{
+        if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 ) {
+            
+        } else {
+            if (  DProf2 == Prof1 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
+                
+            }                
         else {
             if (Race == "Elf" || Race == "Halforc") {
                 
-            if (RProf == DProf2 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
+            if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
                 
             } 
             else {
@@ -1432,16 +1445,31 @@ function Switch() {
         document.getElementById("output").appendChild(Source);
             }     
         }
-            else {
+            else if (Race == "Halfelf") {
+                
+        if (Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
             
-        var Source = document.createElement("script");
-        Source.src = "LangSupport.js";
-        Source.innerHTML = null;
-        Source.id = "Source";
-        document.getElementById("output").innerHTML = "";
-        document.getElementById("output").appendChild(Source);
+        }else{
+            var Source = document.createElement("script");
+            Source.src = "LangSupport.js";
+            Source.innerHTML = null;
+            Source.id = "Source";
+            document.getElementById("output").innerHTML = "";
+            document.getElementById("output").appendChild(Source);
+            
+        }
+            } else {
+                var Source = document.createElement("script");
+                Source.src = "LangSupport.js";
+                Source.innerHTML = null;
+                Source.id = "Source";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("output").appendChild(Source);
+                
             }        
         } 
+            }
+        }
     } else {
         if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
             
@@ -1453,13 +1481,13 @@ function Switch() {
         } 
         else {
             
-        if (DProf2 == DProf2 || DProf2 == Prof2 || DProf2 == Prof3) {
+        if (DProf2 == Prof1 || DProf2 == Prof2 || DProf2 == Prof3) {
             
         } 
         else {
             if (Race == "Elf" || Race == "Halforc") {
                 
-            if (RProf == DProf2 || RProf ==Prof2 || RProf == Prof3) {
+            if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3) {
                 
             } 
             else {
@@ -1470,20 +1498,33 @@ function Switch() {
         Source.id = "Source";
         document.getElementById("output").innerHTML = "";
         document.getElementById("output").appendChild(Source);
-            }     
+            }
         }
-            else {
+            else if (Race == "Halfelf") {
+                
+        if (Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
             
-        var Source = document.createElement("script");
-        Source.src = "LangSupport.js";
-        Source.innerHTML = null;
-        Source.id = "Source";
-        document.getElementById("output").innerHTML = "";
-        document.getElementById("output").appendChild(Source);
+        }else{
+            var Source = document.createElement("script");
+            Source.src = "LangSupport.js";
+            Source.innerHTML = null;
+            Source.id = "Source";
+            document.getElementById("output").innerHTML = "";
+            document.getElementById("output").appendChild(Source);
+            
+        }
+            } else {
+                var Source = document.createElement("script");
+                Source.src = "LangSupport.js";
+                Source.innerHTML = null;
+                Source.id = "Source";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("output").appendChild(Source);
+                
             }        
+        }        
         }      
         }        
         }
-    }
-        
-    }
+    
+}
