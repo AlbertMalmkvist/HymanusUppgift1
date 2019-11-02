@@ -15,6 +15,7 @@ var SubClass = document.getElementById("SubClass");
     
 SubClass.style.visibility = "hidden";
 SubClassLabel.style.visibility = "hidden";
+
     var numbersC = SubClass.length;
 
 
@@ -1318,6 +1319,7 @@ if (Background == "Acolyte") {
 var Race = document.getElementById("Race").value;
 var SubRace = document.getElementById("SubRace");
 var SubRaceLabel = document.getElementById("SRace"); 
+     var numbersR = SubRace.length;
 var RaceCom = ".";
 var RProf = "None";
 SubRace.style.visibility = "hidden";
@@ -1325,7 +1327,6 @@ SubRaceLabel.style.visibility = "hidden";
  if (Race == "Dwarf") {
     SubRaceLabel.style.visibility = "visible";
      SubRace.style.visibility = "visible";
-     var numbersR = SubRace.length;
      for (let i = 0; i < numbersR; i++) {
          if (i => 2) {
      SubRace.remove(2);         
@@ -1335,6 +1336,7 @@ SubRaceLabel.style.visibility = "hidden";
  else if (Race == "Elf") {
     SubRaceLabel.style.visibility = "visible";
      SubRace.style.visibility = "visible";
+
      var numbersR = SubRace.length;
      for (let i = 0; i < numbersR; i++) {
          if (i < 2) {
@@ -1344,6 +1346,7 @@ SubRaceLabel.style.visibility = "hidden";
      SubRace.remove(3); 
          }
      }
+
      RProf = "Perception";
      RaceCom =" and "+RProf+" from your race."
  }  
@@ -1398,7 +1401,7 @@ SubRaceLabel.style.visibility = "hidden";
 
  }
  else{}
-
+ var ProfLabel = document.getElementById("ProfLabel";)
  var  Info = document.getElementById("Info");
 Info.innerHTML = "You got proficiencies in "+DProf1+" and "+DProf2+" from your background"+RaceCom;
 
@@ -1410,19 +1413,9 @@ function Switch() {
     var Prof4 = document.getElementById("Prof4").value;
 
     if (Class == "Rogue") {
-        if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4) {
+        if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 || DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 || DProf2 == DProf2 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
             
-        } 
-        else {
-            
-        if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4) {
-            
-        } 
-        else {
-            
-        if (DProf2 == DProf2 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
-            
-        } 
+        }
         else {
             if (Race == "Elf" || Race == "Halforc") {
                 
@@ -1448,9 +1441,7 @@ function Switch() {
         document.getElementById("output").innerHTML = "";
         document.getElementById("output").appendChild(Source);
             }        
-        }        
-        }        
-        }
+        } 
     } else {
         if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
             

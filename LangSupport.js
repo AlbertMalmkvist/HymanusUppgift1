@@ -133,5 +133,3 @@ function Switch() {
         document.getElementById("output").appendChild(Source);        
         }
     }
-        
-    }
