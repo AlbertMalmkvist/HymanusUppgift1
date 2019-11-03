@@ -24,34 +24,33 @@ var SubRaceLabel = document.getElementById("SRace");
 
 var RLang1 = "";
 var RLang2 = "";
-var RProf1 = "";
-var RProf2 = "";
-var TLang = "";
-var TProf = "";
+var  BRL = document.getElementById("BRL");
 
  if (Race == "Dwarf") {
      RLang1 = "Common";
      RLang2 = "Dwarfish";
-     var RaceCom ="You know the Langueges "+RLang1+" and "+RLang2+".";
+     var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
  }
  else if (Race == "Elf") {
     RLang1 = "Common";
     RLang2 = "Elvish";
     RProf = "Perception";
-    var RaceCom ="You know the Langueges "+RLang1+" and "+RLang2+".";
+    var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
 if (SubRaceval = "High Elf") {
-    Lang1.style.visibility = "visible";
+    Lang1.style.visibility = "visible"
+    BRL.style.visibility = "visible";    ;
 }
  }  
  else if (Race == "Halfling") {
     RLang1 = "Common";
     RLang2 = "Halfling";
-    var RaceCom ="You know the Langueges "+RLang1+" and "+RLang2+".";
+    var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
  }  
  else if(Race == "Human"){
     RLang1 = "Common";
-    Lang1.style.visibility = "visible";
-    var RaceCom ="You know the Langueges "+RLang1+".";
+    Lang1.style.visibility = "visible"
+    BRL.style.visibility = "visible";    ;
+    var RaceCom ="You know the langueges "+RLang1+".";
  }
  else if (Race == "Dragonborn") {
     RLang1 = "Common";
@@ -61,24 +60,25 @@ if (SubRaceval = "High Elf") {
  else if (Race == "Gnome") {
     RLang1 = "Common";
     RLang2 = "Gnomish";
-    var RaceCom ="You know the Langueges "+RLang1+" and "+RLang2+".";
+    var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
  }
  else if (Race == "Halfelf") { 
     RLang1 = "Common";
-    Lang1.style.visibility = "visible";
-    var RaceCom ="You know the Languege "+RLang1+".";
+    Lang1.style.visibility = "visible"
+    BRL.style.visibility = "visible";    ;
+    var RaceCom ="You know the languege "+RLang1+".";
 
  }  
  else if(Race == "Halforc"){
     RLang1 = "Common";
     RLang2 = "Orc";
     RProf = "Intimidation";
-    var RaceCom ="You know the Langueges "+RLang1+" and "+RLang2+".";
+    var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
  }
  else if(Race == "Tiefling"){
     RLang1 = "Common";
     RLang2 = "Infernal";
-    var RaceCom ="You know the Langueges "+RLang1+" and "+RLang2+".";
+    var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
  }
  else{}
 
@@ -87,10 +87,14 @@ var DProf1="";
 var DProf2="";
 
 var  Background = document.getElementById("Background").value;
+var  BackLang = document.getElementById("BackLang");
 
 if (Background == "Acolyte") {
     DProf1="Insight";
     DProf2="Religion";
+    Lang4.style.visibility = "visible";
+    Lang5.style.visibility = "visible";
+    BackLang.style.visibility = "visible";
 }  else if (Background == "Charlatan") {
     DProf1="Deception";
     DProf2="Sleight of Hand";    
@@ -106,18 +110,29 @@ if (Background == "Acolyte") {
 } else if (Background == "Guild Artisan") {
     DProf1="Insight";
     DProf2="Persuasion";
+    Lang4.style.visibility = "visible";
+    BackLang.style.visibility = "visible";
 } else if (Background == "Hermit") {
     DProf1="Medicine";
     DProf2="Religion";
+    Lang4.style.visibility = "visible";
+    BackLang.style.visibility = "visible";
 } else if (Background == "Noble") {
     DProf1="History";
     DProf2="Persuasion";
+    Lang4.style.visibility = "visible";
+    BackLang.style.visibility = "visible";
 } else if (Background == "Outlander") {
     DProf1="Athletics";
     DProf2="Survival";
+    Lang4.style.visibility = "visible";
+    BackLang.style.visibility = "visible";
 } else if (Background == "Sage") {
     DProf1="Arcana";
     DProf2="History";
+    Lang4.style.visibility = "visible";
+    Lang5.style.visibility = "visible";
+    BackLang.style.visibility = "visible";
 } else if (Background == "Sailor") {
     DProf1="Athletics";
     DProf2="Perception";
@@ -128,17 +143,6 @@ if (Background == "Acolyte") {
     DProf1="Sleight of Hand";
     DProf2="Stealth";
 }else{
-    
-}
-var  SRL = document.getElementById("SRL");
-
-if (Race=="Halfelf") {
-    SRL.style.visibility = "visible";
-} else if (Race=="Human") {
-    SRL.style.visibility = "visible";    
-} else if (Race=="Elf" && SubRace == "High Elf") {
-    SRL.style.visibility = "visible";    
-} else {
     
 }
 
@@ -273,6 +277,8 @@ if (Class == "Cleric" && SubClassval == "Knowledge") {
 }
 var  Info = document.getElementById("Info");
 Info.innerHTML = RaceCom;
+
+
 Info.style.visibility = "visible";
 function Switch() { 
     var  Lang1 = document.getElementById("Lang1").value;
@@ -280,57 +286,716 @@ function Switch() {
     var  Lang3 = document.getElementById("Lang3").value;
     var  Lang4 = document.getElementById("Lang4").value;
     var  Lang5 = document.getElementById("Lang5").value;
+    var   SCB1V = document.getElementById("SubClassBonus1").value;
+     var  SCB2V = document.getElementById("SubClassBonus2").value;
 
     if (Race=="Halfelf") {
-        if (RLang1 == Lang1|| RLang2 == Lang1) {
+        if (RLang1 == Lang1) {
         } else {
-            var Source = document.createElement("script");
-            Source.src = "Support2.js";
-            Source.innerHTML = null;
-            Source.id = "Source";
-            document.getElementById("output").innerHTML = "";
-            document.getElementById("output").appendChild(Source);    
+            if (Class == "Cleric" && SubClassval == "Knowledge") {
+            if (RLang1 == Lang2 || RLang1 == Lang3) {
+            } 
+            else{
+                if (SCB1V == SCB2V) {
+                    
+            }
+            else{
+                if (Background == "Acolyte") {
+                    if (RLang1 == Lang4 || RLang1 == Lang5) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang1 == Lang5 || Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }    
+                    }                
+                } else if (Background == "Guild Artisan") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }   
+                    }                
+                } else if (Background == "Hermit") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }  
+                    }                
+                } else if (Background == "Noble") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }   
+                    }                
+                } else if (Background == "Outlander") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }  
+                    }                
+                } else if (Background == "Sage") {
+                    if (RLang1 == Lang4 || RLang1 == Lang5) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang1 == Lang5 || Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }      
+                    }                
+                } else { 
+                    if (Lang1 == Lang2 || Lang1 == Lang3 || Lang2 == Lang3 ) {
+                        
+                    } else {
+                    var Source = document.createElement("script");
+                    Source.src = "Support2.js";
+                    Source.innerHTML = null;
+                    Source.id = "Source";
+                    document.getElementById("output").innerHTML = "";
+                    document.getElementById("output").appendChild(Source);
+                        
+                    }
+                }
+            }
+           }
+            }
+            else {
+                var Source = document.createElement("script");
+                Source.src = "Support2.js";
+                Source.innerHTML = null;
+                Source.id = "Source";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("output").appendChild(Source);
+            }  
         }
     } else if (Race=="Human") {
-        if (RLang1 == Lang1|| RLang2 == Lang1) {
+        if (RLang1 == Lang1) {
         } else {
-            var Source = document.createElement("script");
-            Source.src = "Support2.js";
-            Source.innerHTML = null;
-            Source.id = "Source";
-            document.getElementById("output").innerHTML = "";
-            document.getElementById("output").appendChild(Source);    
+            if (Class == "Cleric" && SubClassval == "Knowledge") {
+            if (RLang1 == Lang2 || RLang1 == Lang3) {
+            } 
+            else{
+                if (SCB1V == SCB2V) {
+                    
+            }
+            else{
+                if (Background == "Acolyte") {
+                    if (RLang1 == Lang4 || RLang1 == Lang5) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang1 == Lang5 || Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }    
+                    }                
+                } else if (Background == "Guild Artisan") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }   
+                    }                
+                } else if (Background == "Hermit") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }  
+                    }                
+                } else if (Background == "Noble") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }   
+                    }                
+                } else if (Background == "Outlander") {
+                    if (RLang1 == Lang4) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }  
+                    }                
+                } else if (Background == "Sage") {
+                    if (RLang1 == Lang4 || RLang1 == Lang5) {
+                    } 
+                    else {
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang1 == Lang5 || Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }      
+                    }                
+                } else { 
+                    if (Lang1 == Lang2 || Lang1 == Lang3 || Lang2 == Lang3 ) {
+                        
+                    } else {
+                    var Source = document.createElement("script");
+                    Source.src = "Support2.js";
+                    Source.innerHTML = null;
+                    Source.id = "Source";
+                    document.getElementById("output").innerHTML = "";
+                    document.getElementById("output").appendChild(Source);
+                        
+                    }
+                }
+           }
         }
-    } else if (Race=="Elf" && SubRace == "High Elf") {
-        if (RLang1 == Lang1|| RLang2 == Lang1) {
-        } else {
-            var Source = document.createElement("script");
-            Source.src = "Support2.js";
-            Source.innerHTML = null;
-            Source.id = "Source";
-            document.getElementById("output").innerHTML = "";
-            document.getElementById("output").appendChild(Source);    
+            }
+            else {
+                var Source = document.createElement("script");
+                Source.src = "Support2.js";
+                Source.innerHTML = null;
+                Source.id = "Source";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("output").appendChild(Source);
+            }  
         }
-    } else {
-        if (Class == "Cleric" && SubClassval == "Knowledge") {
-        if (RLang1 == Lang2|| RLang2 == Lang2 || RLang1 == Lang3|| RLang2 == Lang3) {
-        } 
-        else {
-            var Source = document.createElement("script");
-            Source.src = "Support2.js";
-            Source.innerHTML = null;
-            Source.id = "Source";
-            document.getElementById("output").innerHTML = "";
-            document.getElementById("output").appendChild(Source);    
-        }
-        } 
-        else{
-        var Source = document.createElement("script");
-        Source.src = "Support2.js";
-        Source.innerHTML = null;
-        Source.id = "Source";
-        document.getElementById("output").innerHTML = "";
-        document.getElementById("output").appendChild(Source); 
-       }
-        }
+    } else if (Race=="Elf" && SubRaceval == "High Elf") {
+            if (RLang1 == Lang1 || RLang2 == Lang1) {
+            } else {
+                if (Class == "Cleric" && SubClassval == "Knowledge") {
+                if (RLang1 == Lang2 || RLang1 == Lang3||RLang2 == Lang2 || RLang2 == Lang3) {
+                } 
+                else{
+                    if (SCB1V == SCB2V) {
+                    
+                    }
+                    else{
+                    if (Background == "Acolyte") {
+                        if (RLang1 == Lang4 || RLang1 == Lang5||RLang2 == Lang4 || RLang2 == Lang5) {
+                        } 
+                        else {
+                            if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang1 == Lang5 || Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else if (Background == "Guild Artisan") {
+                        if (RLang1 == Lang4||RLang2 == Lang4 ) {
+                        } 
+                        else {
+                            if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }   
+                        }                
+                    } else if (Background == "Hermit") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }  
+                        }                
+                    } else if (Background == "Noble") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }   
+                        }                
+                    } else if (Background == "Outlander") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang2 == Lang3 || Lang2 == Lang4 || Lang3 == Lang4) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }  
+                        }                
+                    } else if (Background == "Sage") {
+                        if (RLang1 == Lang4 || RLang1 == Lang5||RLang2 == Lang4 || RLang2 == Lang5) {
+                        } 
+                        else {
+                            if (Lang1 == Lang2 || Lang1 == Lang3 || Lang1 == Lang4 || Lang1 == Lang5 || Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }      
+                        }                
+                    } else { 
+                        if (Lang1 == Lang2 || Lang1 == Lang3 || Lang2 == Lang3 ) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }
+                    }
+                }
+               }
+                }
+                else {
+                    if (Background == "Acolyte") {
+                        if (RLang1 == Lang4 || RLang1 == Lang5||RLang2 == Lang4||RLang2 == Lang5) {
+                        } 
+                        else {
+                            if (Lang1 == Lang4 || Lang1 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }      
+                        }                
+                    } else if (Background == "Guild Artisan") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang4 ) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }  
+                        }                
+                    } else if (Background == "Hermit") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang4 ) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }  
+                        }                
+                    } else if (Background == "Noble") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang4 ) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }  
+                        }                
+                    } else if (Background == "Outlander") {
+                        if (RLang1 == Lang4||RLang2 == Lang4) {
+                        } 
+                        else {
+                            if (Lang1 == Lang4 ) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }  
+                        }                
+                    } else if (Background == "Sage") {
+                        if (RLang1 == Lang4 || RLang1 == Lang5||RLang2 == Lang4||RLang2 == Lang5) {
+                        } 
+                        else {
+                            if (Lang1 == Lang4 || Lang1 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }      
+                        }                
+                    } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }
+                    }
+               }  
     }
+         else {
+                if (Class == "Cleric" && SubClassval == "Knowledge") {
+                if (RLang1 == Lang2 || RLang1 == Lang3 || RLang2 == Lang2 || RLang2 == Lang3) {
+                } 
+                else{
+                    if (SCB1V == SCB2V) {
+                    
+                } else {
+                    if (Background == "Acolyte") {
+                        if (RLang1 == Lang4 || RLang1 == Lang5) {
+                        } 
+                        else {
+                            if (Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else if (Background == "Guild Artisan") {
+                        if (RLang1 == Lang4) {
+                        } 
+                        else {
+                            if (Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else if (Background == "Hermit") {
+                        if (RLang1 == Lang4) {
+                        } 
+                        else {
+                            if (Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else if (Background == "Noble") {
+                        if (RLang1 == Lang4) {
+                        } 
+                        else {
+                            if (Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else if (Background == "Outlander") {
+                        if (RLang1 == Lang4) {
+                        } 
+                        else {
+                            if (Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else if (Background == "Sage") {
+                        if (RLang1 == Lang4 || RLang1 == Lang5) {
+                        } 
+                        else {
+                            if (Lang2 == Lang3 || Lang2 == Lang4 || Lang2 == Lang5 || Lang3 == Lang4 || Lang3 == Lang5 || Lang4 == Lang5) {
+                                
+                            } else {
+                            var Source = document.createElement("script");
+                            Source.src = "Support2.js";
+                            Source.innerHTML = null;
+                            Source.id = "Source";
+                            document.getElementById("output").innerHTML = "";
+                            document.getElementById("output").appendChild(Source);
+                                
+                            }    
+                        }                
+                    } else { 
+                        if (Lang2 == Lang3 ) {
+                            
+                        } else {
+                        var Source = document.createElement("script");
+                        Source.src = "Support2.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                            
+                        }
+                    }
+                    
+                }
+               }
+                }
+                else {
+                        if (Background == "Acolyte") {
+                            if (RLang1 == Lang4 || RLang1 == Lang5||RLang2 == Lang4 || RLang2 == Lang5) {
+                            } 
+                            else {
+                                if (Lang4 == Lang5) {
+                                    
+                                } else {
+                                var Source = document.createElement("script");
+                                Source.src = "Support2.js";
+                                Source.innerHTML = null;
+                                Source.id = "Source";
+                                document.getElementById("output").innerHTML = "";
+                                document.getElementById("output").appendChild(Source);
+                                    
+                                }    
+                            }                
+                        } else if (Background == "Guild Artisan") {
+                            if (RLang1 == Lang4||RLang2 == Lang4 ) {
+                            } 
+                            else {
+                                var Source = document.createElement("script");
+                                Source.src = "Support2.js";
+                                Source.innerHTML = null;
+                                Source.id = "Source";
+                                document.getElementById("output").innerHTML = "";
+                                document.getElementById("output").appendChild(Source);
+                                    
+                                
+                            }                
+                        } else if (Background == "Hermit") {
+                            if (RLang1 == Lang4||RLang2 == Lang4 ) {
+                            } 
+                            else {
+                                var Source = document.createElement("script");
+                                Source.src = "Support2.js";
+                                Source.innerHTML = null;
+                                Source.id = "Source";
+                                document.getElementById("output").innerHTML = "";
+                                document.getElementById("output").appendChild(Source);
+                                    
+                                
+                            }
+                                        
+                        } else if (Background == "Noble") {
+                            if (RLang1 == Lang4||RLang2 == Lang4 ) {
+                            } 
+                            else {
+                                var Source = document.createElement("script");
+                                Source.src = "Support2.js";
+                                Source.innerHTML = null;
+                                Source.id = "Source";
+                                document.getElementById("output").innerHTML = "";
+                                document.getElementById("output").appendChild(Source);
+                                    
+                                
+                            }                
+                        } else if (Background == "Outlander") {
+                            if (RLang1 == Lang4||RLang2 == Lang4 ) {
+                            } 
+                            else {
+                                var Source = document.createElement("script");
+                                Source.src = "Support2.js";
+                                Source.innerHTML = null;
+                                Source.id = "Source";
+                                document.getElementById("output").innerHTML = "";
+                                document.getElementById("output").appendChild(Source);
+                                    
+                                
+                            }            
+                        } else if (Background == "Sage") {
+                            if (RLang1 == Lang4 || RLang1 == Lang5||RLang2 == Lang4 ||RLang2 == Lang5 ) {
+                            } 
+                            else {
+                                if (Lang4 == Lang5) {
+                                    
+                                } else {
+                                var Source = document.createElement("script");
+                                Source.src = "Support2.js";
+                                Source.innerHTML = null;
+                                Source.id = "Source";
+                                document.getElementById("output").innerHTML = "";
+                                document.getElementById("output").appendChild(Source);
+                                    
+                                }    
+                            }                
+                        } else { Info.innerHTML = "Fail";
+                                
+                            }
+                        }
+                   }
+                    }  
+            

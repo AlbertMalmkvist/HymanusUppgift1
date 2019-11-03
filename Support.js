@@ -22,6 +22,9 @@ SubClassLabel.style.visibility = "hidden";
     var Prof2 = document.getElementById("Prof2");
     var Prof3 = document.getElementById("Prof3");
     var Prof4 = document.getElementById("Prof4");
+    var Prof5 = document.getElementById("Prof5");
+    var Prof6 = document.getElementById("Prof6");
+
 
     if (Class=="Barbarian") {
         Prof1.style.visibility="visible";
@@ -1431,7 +1434,6 @@ function Switch() {
             }                
         else {
             if (Race == "Elf" || Race == "Halforc") {
-                
             if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
                 
             } 
@@ -1447,7 +1449,7 @@ function Switch() {
         }
             else if (Race == "Halfelf") {
                 
-        if (Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
+        if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
             
         }else{
             var Source = document.createElement("script");
@@ -1502,7 +1504,7 @@ function Switch() {
         }
             else if (Race == "Halfelf") {
                 
-        if (Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
+        if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
             
         }else{
             var Source = document.createElement("script");
