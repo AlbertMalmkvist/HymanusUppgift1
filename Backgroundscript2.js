@@ -5,6 +5,11 @@ var chart = document.getElementById("Chart");
 chart.style.visibility = "hidden";
 chart.innerHTML = "";
 
+var P1= document.getElementById("P1");
+var P2= document.getElementById("P2");
+P2.style.visibility = "visible";
+P1.style.visibility = "hidden";
+
 var Class = document.getElementById("Class").value;
 var SubClass = document.getElementById("SubClass");
 var SubClassvalue = document.getElementById("SubClass").value;

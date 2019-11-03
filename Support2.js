@@ -1,5 +1,9 @@
 var  Info = document.getElementById("Info");
 Info.innerHTML = "";
+var P1= document.getElementById("P1");
+var P2= document.getElementById("P2");
+P1.style.visibility = "visible";
+P2.style.visibility = "hidden";
 
 var FN = document.getElementById("FN").value; 
 var LN = document.getElementById("LN").value; 
@@ -10,6 +14,16 @@ var con = document.getElementById("Constitution").value;
 var int = document.getElementById("Intelligence").value; 
 var wis = document.getElementById("Wisdom").value; 
 var cha = document.getElementById("Charisma").value; 
+
+var LN = document.getElementById("LN").value; 
+
+var LN = document.getElementById("LN").value; 
+
+var Race = document.getElementById("Race").value;
+var SubRace = document.getElementById("SubRace");
+var SubRacevalue = document.getElementById("SubRace").value;
+
+var RaceText="";
 
 if (Race == "Dwarf") {
 }
@@ -30,6 +44,22 @@ else if(Race == "Halforc"){
 else if(Race == "Tiefling"){
 }
 else{}
+
+var Aling = "";
+var AlingmentText = "";
+var PAlingement = document.getElementsByName("PAlingement");
+for (let i = 0, length = PAlingement.length; i < length; i++) {
+ if (PAlingement[i].checked ) {
+   Aling = PAlingement[i].value;
+   AlingmentText = "Your Alingment is "+Aling+". <br>\n";
+ }
+}
+
+var Class = document.getElementById("Class").value;
+var SubClass = document.getElementById("SubClass");
+var SubClassvalue = document.getElementById("SubClass").value;
+
+var ClassText = "";
 
 var chart= document.getElementById("Chart");
 
@@ -89,23 +119,17 @@ chart.style.visibility="visible";
 
 chart.innerHTML = attribute.join("<br>\n")
 
-var Class = document.getElementById("Class").value;
-var SubClass = document.getElementById("SubClass");
-var SubClassvalue = document.getElementById("SubClass").value;
-var Race = document.getElementById("Race").value;
-var SubRace = document.getElementById("SubRace");
-var SubRacevalue = document.getElementById("SubRace").value;
 
 var news = document.getElementById("Conclusion");
 news.style.visibility = "visible";
-news.innerHTML = "Your name is "+FN + " "+LN+". <br>\n"  ;
+news.innerHTML = "Your name is "+FN + " "+LN+". <br>\n"  +RaceText+ ClassText + AlingmentText ;
 
 
 
 
 
 
-function Switch() { 
+function Reset() { 
     var Source = document.createElement("script");
     Source.src = "Backgroundscript2.js";
     Source.innerHTML = null;

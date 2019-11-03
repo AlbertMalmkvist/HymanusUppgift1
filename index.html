@@ -8,7 +8,12 @@
             <label id="FNL" name="Label1">First Name</label>
             <input type="text" name="Label1" id="FN" ><br>
             <label id="LNL" name="Label1">Last Name</label>
-            <input type="text" name="Label1" id="LN" ><br><br>  
+            <input type="text" name="Label1" id="LN" ><br>
+            
+            <button id="P1" onclick="Reset()">Reset</button><br>
+            <label id="Conclusion"></label>
+            <label id="Chart"></label>
+
             <label id="RaceL" name="Label1">Race</label>
 
             <select name="Label1" id="Race">
@@ -109,24 +114,24 @@
             
             <br>
             <label id="AL" name="Label1">Alingement</label><br>
-            <input type="radio" name="PAlingement" value="Good Lawful" > 
-            <label id="AL" name="Label1">Good Lawful</label>
-            <input type="radio" name="PAlingement" value="Good Neutral"> 
-            <label id="AL" name="Label1">Good Neutral</label>
-            <input type="radio" name="PAlingement" value="Good Chaotic"> 
-            <label id="AL" name="Label1">Good Chaotic</label><br> 
-            <input type="radio" name="PAlingement" value="Neutral Lawful" > 
-            <label id="AL" name="Label1">Neutral Lawful</label>
+            <input type="radio" name="PAlingement" value="Lawful Good" > 
+            <label id="AL" name="Label1">Lawful Good</label>
+            <input type="radio" name="PAlingement" value="Neutral Good"> 
+            <label id="AL" name="Label1">Neutral Good</label>
+            <input type="radio" name="PAlingement" value="Chaotic Good"> 
+            <label id="AL" name="Label1">Chaotic Good</label><br> 
+            <input type="radio" name="PAlingement" value="Lawful Neutral" > 
+            <label id="AL" name="Label1">Lawful Neutral</label>
             <input type="radio" name="PAlingement" value="Neutral" checked> 
             <label id="AL" name="Label1">Neutral</label>
-            <input type="radio" name="PAlingement" value="Neutral Chaotic"> 
-            <label id="AL" name="Label1">Neutral Chaotic</label><br>
-            <input type="radio" name="PAlingement" value="Evil Lawful" > 
-            <label id="AL" name="Label1">Evil Lawful</label>
-            <input type="radio" name="PAlingement" value="Evil Neutral"> 
-            <label id="AL" name="Label1">Evil Neutral</label>
-            <input type="radio" name="PAlingement" value="Evil Chaotic"> 
-            <label id="AL" name="Label1">Evil Chaotic </label><br><br>
+            <input type="radio" name="PAlingement" value="Chaotic Neutral"> 
+            <label id="AL" name="Label1">Chaotic Neutral</label><br>
+            <input type="radio" name="PAlingement" value="Lawful Evil" > 
+            <label id="AL" name="Label1">Lawful Evil</label>
+            <input type="radio" name="PAlingement" value="Neutral Evil"> 
+            <label id="AL" name="Label1">Neutral Evil</label>
+            <input type="radio" name="PAlingement" value="Chaotic Evil"> 
+            <label id="AL" name="Label1">Chaotic Evil </label><br><br>
 
             <label id="CL" name="Label1">Class</label>
             <select name="Label1" id="Class">
@@ -252,7 +257,7 @@
                 <option value="Sylvan">Sylvan</option>
                 <option value="Undercommon">Undercommon</option>
             </select>
-            
+
             <select name="Label2" id="Lang5">
                 <option value="Common">Common</option>
                 <option value="Dwarfish">Dwarfish</option>
@@ -354,9 +359,7 @@ for (var i = 1; i<=18; i++){
 }       
 </script>
             <br>
-            <button id="P1" onclick="Switch()">Change</button><br>
-            <label id="Conclusion"></label>
-            <label id="Chart"></label>
+            <button id="P2" onclick="Switch()">Change</button>
             <div id="output">
             <script id="Source" src="Backgroundscript2.js"></script>
         </div>
