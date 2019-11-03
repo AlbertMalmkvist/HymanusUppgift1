@@ -1429,9 +1429,123 @@ function Switch() {
 
     var IncAtt1=document.getElementById("IncAtt1").value;
     var IncAtt2=document.getElementById("IncAtt2").value;
-if (IncAtt2 == IncAtt1) {
-    
-} else {
+    if (Race == "Halfelf") {
+        if (IncAtt2 == IncAtt1) {
+            
+        } else {
+            
+        
+            if (Class == "Rogue") {
+                if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
+                    
+                }else{
+                if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 ) {
+                    
+                } else {
+                    if (  DProf2 == Prof1 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
+                        
+                    }                
+                else {
+                    if (Race == "Elf" || Race == "Halforc") {
+                    if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
+                        
+                    } 
+                    else {
+                    
+                var Source = document.createElement("script");
+                Source.src = "LangSupport.js";
+                Source.innerHTML = null;
+                Source.id = "Source";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("output").appendChild(Source);
+                    }     
+                }
+                    else if (Race == "Halfelf") {
+                        
+                if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
+                    
+                }else{
+                    var Source = document.createElement("script");
+                    Source.src = "LangSupport.js";
+                    Source.innerHTML = null;
+                    Source.id = "Source";
+                    document.getElementById("output").innerHTML = "";
+                    document.getElementById("output").appendChild(Source);
+                    
+                }
+                    } else {
+                        var Source = document.createElement("script");
+                        Source.src = "LangSupport.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                        
+                    }        
+                } 
+                    }
+                }
+            } else {
+                if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
+                    
+                } 
+                else {
+                    
+                if (DProf1 == Prof1 || DProf1 == Prof2 || DProf1 == Prof3) {
+                    
+                } 
+                else {
+                    
+                if (DProf2 == Prof1 || DProf2 == Prof2 || DProf2 == Prof3) {
+                    
+                } 
+                else {
+                    if (Race == "Elf" || Race == "Halforc") {
+                        
+                    if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3) {
+                        
+                    } 
+                    else {
+                    
+                var Source = document.createElement("script");
+                Source.src = "LangSupport.js";
+                Source.innerHTML = null;
+                Source.id = "Source";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("output").appendChild(Source);
+                    }
+                }
+                    else if (Race == "Halfelf") {
+                        
+                if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
+                    
+                }else{
+                    var Source = document.createElement("script");
+                    Source.src = "LangSupport.js";
+                    Source.innerHTML = null;
+                    Source.id = "Source";
+                    document.getElementById("output").innerHTML = "";
+                    document.getElementById("output").appendChild(Source);
+                    
+                }
+                    } else {
+                        var Source = document.createElement("script");
+                        Source.src = "LangSupport.js";
+                        Source.innerHTML = null;
+                        Source.id = "Source";
+                        document.getElementById("output").innerHTML = "";
+                        document.getElementById("output").appendChild(Source);
+                        
+                    }        
+                }        
+                }      
+                }        
+                }
+            
+        }}
+        
+     else {
+        
     
 
     if (Class == "Rogue") {
@@ -1541,4 +1655,5 @@ if (IncAtt2 == IncAtt1) {
         }        
         }
     
-}}
+}
+    }

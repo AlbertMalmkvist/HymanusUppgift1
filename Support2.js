@@ -48,6 +48,9 @@ var AProf6 = "";
 var Expert1 = document.getElementById("SubClassBonus1").value;
 var Expert2 = document.getElementById("SubClassBonus2").value;
 
+var AExpert1 = "";
+var AExpert2 = "";
+
 var ExpertText = "";
 
 var LN = document.getElementById("LN").value; 
@@ -87,8 +90,8 @@ else if (Class == "Cleric") {
   AProf1 =Prof1 + ", ";
   AProf2 =Prof2 + ", ";
   if (SubClassvalue == "Knowledge") {
-    var AExpert2 = Expert2;
-    var AExpert1 = Expert1;
+    AExpert2 = Expert2;
+    AExpert1 = Expert1;
     ExpertText ="You got expertise in "+ AExpert1 + " And " + AExpert2+". <br>\n";
 
     ALang2 = Lang2 +", ";  
@@ -121,9 +124,9 @@ else if(Class == "Ranger"){
   AProf2 =Prof2 + ", ";
   AProf3 =Prof3 + ", ";
 }
-else if(Class == "Rouge"){
+else if(Class == "Rogue"){
   ClassText = "Your class is " +Class+". <br>\n";
-  var AExpert1 = Expert1;
+  AExpert1 = Expert1;
   ExpertText ="You got expertise in "+ AExpert1 +". <br>\n";
   AProf1 =Prof1 + ", ";
   AProf2 =Prof2 + ", ";
@@ -207,7 +210,7 @@ else if (Race == "Halfling") {
 else if(Race == "Human"){
   RaceText = "Your race is " +Race +". <br>\n";
   RLang1 = "Common";
-  ALang1 = Lang1 +"";
+  RLang2 = Lang1;
   str++;
   dex++;
   con++;
@@ -239,7 +242,7 @@ else if (Race == "Gnome") {
 else if (Race == "Halfelf") {
   RaceText = "Your race is " +Race +". <br>\n";
   RLang1 = "Common";
-  ALang1 = Lang1 +"";
+  RLang2 = Lang1;
   cha++
   cha++
   if (IncAtt1 == "str" || IncAtt2 == "str") {
