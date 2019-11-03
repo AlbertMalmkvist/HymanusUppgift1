@@ -90,7 +90,7 @@ SubClassLabel.style.visibility = "hidden";
     opt.text = value;
     Prof2.add(opt);     
     }
-    else if(Class=="bard"){
+    else if(Class=="Bard"){
         Prof1.style.visibility="visible";
         Prof2.style.visibility="visible";
         Prof3.style.visibility="visible";
@@ -338,12 +338,10 @@ SubClassLabel.style.visibility = "hidden";
         opt.value = value;
         opt.text = value;
         Prof1.add(opt);
-
         var opt = document.createElement("option");
     opt.value = value;
     opt.text = value;
         Prof2.add(opt);
-
         var opt = document.createElement("option");
     opt.value = value;
     opt.text = value;

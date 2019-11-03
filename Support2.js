@@ -15,35 +15,41 @@ var int = document.getElementById("Intelligence").value;
 var wis = document.getElementById("Wisdom").value; 
 var cha = document.getElementById("Charisma").value; 
 
-var LN = document.getElementById("LN").value; 
+var Lang1 = document.getElementById("Lang1").value; 
+var Lang2 = document.getElementById("Lang2").value; 
+var Lang3 = document.getElementById("Lang3").value; 
+var Lang4 = document.getElementById("Lang4").value; 
+var Lang5 = document.getElementById("Lang5").value; 
+
+var ALang1 = "";
+var ALang2 = "";
+var ALang3 = "";
+var ALang4 = "";
+var ALang5 = "";
+
+var Prof1 = document.getElementById("Prof1").value; 
+var Prof2 = document.getElementById("Prof2").value; 
+var Prof3 = document.getElementById("Prof3").value; 
+var Prof4 = document.getElementById("Prof4").value;  
+var Prof5 = document.getElementById("Prof5").value; 
+var Prof6 = document.getElementById("Prof6").value;
+
+var AProf1 = "";
+var AProf2 = "";
+var AProf3 = "";
+var AProf4 = "";
+var AProf5 = "";
+var AProf6 = "";
+
+var Expert1 = document.getElementById("SubClassBonus1").value;
+var Expert2 = document.getElementById("SubClassBonus2").value;
+
+var ExpertText = "";
 
 var LN = document.getElementById("LN").value; 
 
-var Race = document.getElementById("Race").value;
-var SubRace = document.getElementById("SubRace");
-var SubRacevalue = document.getElementById("SubRace").value;
+var LN = document.getElementById("LN").value; 
 
-var RaceText="";
-
-if (Race == "Dwarf") {
-}
-else if (Race == "Elf") {
-}  
-else if (Race == "Halfling") {
-}  
-else if(Race == "Human"){
-}
-else if (Race == "Dragonborn") {
-}  
-else if (Race == "Gnome") {
-}
-else if (Race == "Halfelf") {
-}  
-else if(Race == "Halforc"){
-}
-else if(Race == "Tiefling"){
-}
-else{}
 
 var Aling = "";
 var AlingmentText = "";
@@ -60,6 +66,217 @@ var SubClass = document.getElementById("SubClass");
 var SubClassvalue = document.getElementById("SubClass").value;
 
 var ClassText = "";
+
+if (Class == "Barbarian") {
+  ClassText = "Your class is " +Class+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}
+else if (Class == "Bard") {
+  ClassText = "Your class is " +Class+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+  AProf3 =Prof3 + ", ";
+}  
+else if (Class == "Cleric") {
+  ClassText = "Your class is " +Class + " who's domain is the "+SubClassvalue+" domain. <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+  if (SubClassvalue == "Knowledge") {
+    var AExpert2 = Expert2;
+    var AExpert1 = Expert1;
+    ExpertText ="You got expertise in "+ AExpert1 + " And " + AExpert2+". <br>\n";
+
+    ALang2 = Lang2 +", ";  
+    ALang3 = Lang3 +", "; 
+}
+}  
+else if(Class == "Druid"){
+  ClassText = "Your class is " +Class+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}
+else if (Class == "Fighter") {
+  ClassText = "Your class is " +Class + " who's fighting style is "+SubClassvalue+" fighting style. <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}  
+else if (Class == "Monk") {
+  ClassText = "Your class is " +Class+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}
+else if (Class == "Paladin") {
+  ClassText = "Your class is " +Class+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}  
+else if(Class == "Ranger"){
+  ClassText = "Your class is " +Class+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+  AProf3 =Prof3 + ", ";
+}
+else if(Class == "Rouge"){
+  ClassText = "Your class is " +Class+". <br>\n";
+  var AExpert1 = Expert1;
+  ExpertText ="You got expertise in "+ AExpert1 +". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+  AProf3 =Prof3 + ", ";
+  AProf4 =Prof4 + ", ";
+}
+else if(Class == "Sorcerer"){
+  ClassText = "Your class is " +Class + " who's sorcerous origin comes from the "+SubClassvalue+" inside you. <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}
+else if(Class == "Warlock"){
+  ClassText = "Your class is " +Class + " who's patron is "+SubClassvalue+". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}
+else if(Class == "Wizard"){
+  ClassText = "Your class is " +Class +". <br>\n";
+  AProf1 =Prof1 + ", ";
+  AProf2 =Prof2 + ", ";
+}
+else{}
+
+var Race = document.getElementById("Race").value;
+var SubRace = document.getElementById("SubRace");
+var SubRacevalue = document.getElementById("SubRace").value;
+
+var RaceText="";
+
+
+var RLang1 = "";
+var RLang2 = "";
+var RProf = "";
+
+if (Race == "Dwarf") {
+  RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Dwarfish";
+}
+else if (Race == "Elf") {
+  RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Elvish";
+  RProf = "Perception, ";
+  if (SubRaceval == "High Elf") {
+    ALang1 = Lang1 +", ";    
+  }
+}  
+else if (Race == "Halfling") {
+  RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Halfling";
+}  
+else if(Race == "Human"){
+  RaceText = "Your race is " +Race +". <br>\n";
+  RLang1 = "Common";
+  ALang1 = Lang1 +"";
+}
+else if (Race == "Dragonborn") {
+  RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Draconic";
+}  
+else if (Race == "Gnome") {
+  RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Gnomish";
+}
+else if (Race == "Halfelf") {
+  RaceText = "Your race is " +Race +". <br>\n";
+  RLang1 = "Common";
+  ALang1 = Lang1 +"";
+}  
+else if(Race == "Halforc"){
+  RaceText = "Your race is " +Race +". <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Orc";
+  RProf = "Intimidation, "
+}
+else if(Race == "Tiefling"){
+  RaceText = "Your race is " +Race +". <br>\n";
+  RLang1 = "Common";
+  RLang2 = "Infernal";
+}
+else{}
+
+
+
+var  Background = document.getElementById("Background").value;
+
+var BackText = "";
+
+if (Background == "Acolyte") {
+    BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Insight";
+    DProf2="Religion";
+    ALang4 = Lang4 + ", ";
+    ALang5 = Lang5 + ", ";
+    
+}  else if (Background == "Charlatan") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Deception";
+    DProf2="Sleight of Hand";
+} else if (Background == "Criminal") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Deception";
+    DProf2="Stealth";
+} else if (Background == "Entertainer") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Acrobatics";
+    DProf2="Peformance";
+} else if (Background == "Folk Hero") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Animal Handling";
+    DProf2="Survival";
+} else if (Background == "Guild Artisan") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Insight";
+    DProf2="Persuasion";
+    ALang4 = Lang4 + ", ";
+    
+} else if (Background == "Hermit") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Medicine";
+    DProf2="Religion";
+    ALang4 = Lang4 + ", ";
+    
+} else if (Background == "Noble") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="History";
+    DProf2="Persuasion";
+    ALang4 = Lang4 + ", ";
+    
+} else if (Background == "Outlander") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Athletics";
+    DProf2="Survival";
+    ALang4 = Lang4 + ", ";
+} else if (Background == "Sage") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Arcana";
+    DProf2="History";
+    ALang4 = Lang4 + ", ";
+    ALang5 = Lang5 + ", ";
+} else if (Background == "Sailor") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Athletics";
+    DProf2="Perception";
+} else if (Background == "Soldier") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Athletics";
+    DProf2="Intimidation";
+} else if (Background == "Urchin") {
+  BackText = "Your background is that of a "+Background+". <br>\n";
+    DProf1="Sleight of Hand";
+    DProf2="Stealth";
+}else{}
 
 var chart= document.getElementById("Chart");
 
@@ -116,13 +333,13 @@ if (i == 0) {
 }
 }
 chart.style.visibility="visible";
-
-chart.innerHTML = attribute.join("<br>\n")
-
+chart.innerHTML = attribute.join("<br>\n");
+var AllLang =  ALang1 +ALang2 +ALang3 +ALang4 +ALang5 +RLang1 + " and " + RLang2+". <br>\n";
+var ALLProf = AProf1+AProf2+AProf3+AProf4+AProf5+AProf6+DProf1+" and "+DProf2+". <br>\n";
 
 var news = document.getElementById("Conclusion");
 news.style.visibility = "visible";
-news.innerHTML = "Your name is "+FN + " "+LN+". <br>\n"  +RaceText+ ClassText + AlingmentText ;
+news.innerHTML = "Your name is "+FN + " "+LN+". <br>\n"  +RaceText+ ClassText + AlingmentText +BackText+"You know the languages " +AllLang+"Your proficient in " +ALLProf+ExpertText;
 
 
 

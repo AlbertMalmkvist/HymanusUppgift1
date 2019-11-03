@@ -21,14 +21,17 @@ var Prof1 = document.getElementById("Prof1");
 var Prof2 = document.getElementById("Prof2");
 var Prof3 = document.getElementById("Prof3");
 var Prof4 = document.getElementById("Prof4");
-var Lang1 = document.getElementById("Lang1");
-var Lang2 = document.getElementById("Lang2");
-var Lang3 = document.getElementById("Lang3");
+var Prof5 = document.getElementById("Prof5");
+var Prof6 = document.getElementById("Prof6");
+
+
 for (let i = 0; i < 100; i++){
     Prof1.remove(0);
     Prof2.remove(0);
     Prof3.remove(0);
     Prof4.remove(0);
+    Prof5.remove(0);
+    Prof6.remove(0);
     
  SubClass.remove(0);
 

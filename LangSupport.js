@@ -37,8 +37,8 @@ var  BRL = document.getElementById("BRL");
     RProf = "Perception";
     var RaceCom ="You know the langueges "+RLang1+" and "+RLang2+".";
 if (SubRaceval = "High Elf") {
-    Lang1.style.visibility = "visible"
-    BRL.style.visibility = "visible";    ;
+    Lang1.style.visibility = "visible";
+    BRL.style.visibility = "visible";    
 }
  }  
  else if (Race == "Halfling") {
@@ -48,8 +48,8 @@ if (SubRaceval = "High Elf") {
  }  
  else if(Race == "Human"){
     RLang1 = "Common";
-    Lang1.style.visibility = "visible"
-    BRL.style.visibility = "visible";    ;
+    Lang1.style.visibility = "visible";
+    BRL.style.visibility = "visible";    
     var RaceCom ="You know the langueges "+RLang1+".";
  }
  else if (Race == "Dragonborn") {
@@ -64,8 +64,8 @@ if (SubRaceval = "High Elf") {
  }
  else if (Race == "Halfelf") { 
     RLang1 = "Common";
-    Lang1.style.visibility = "visible"
-    BRL.style.visibility = "visible";    ;
+    Lang1.style.visibility = "visible";
+    BRL.style.visibility = "visible";    
     var RaceCom ="You know the languege "+RLang1+".";
 
  }  
