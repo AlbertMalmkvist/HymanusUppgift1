@@ -92,7 +92,7 @@ else if (Class == "Cleric") {
   if (SubClassvalue == "Knowledge") {
     AExpert2 = Expert2;
     AExpert1 = Expert1;
-    ExpertText ="You got expertise in "+ AExpert1 + " And " + AExpert2+". <br>\n";
+    ExpertText ="You got expertise in "+ AExpert1 + " and " + AExpert2+". <br>\n";
 
     ALang2 = Lang2 +", ";  
     ALang3 = Lang3 +", "; 
