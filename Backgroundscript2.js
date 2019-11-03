@@ -30,8 +30,6 @@ for (let i = 0; i < 100; i++){
     Prof2.remove(0);
     Prof3.remove(0);
     Prof4.remove(0);
-    Prof5.remove(0);
-    Prof6.remove(0);
     
  SubClass.remove(0);
 
@@ -43,7 +41,6 @@ var value="Knowledge";
 opt.value = value;
 opt.text = value;
 SubClass.add(opt);
-    
 var opt = document.createElement("option");
 var      value="Life";
   opt.value = value;

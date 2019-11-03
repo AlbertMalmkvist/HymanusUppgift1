@@ -11,6 +11,10 @@ var Class = document.getElementById("Class").value;
 var SubClassLabel = document.getElementById("SubClassLabel");
 var SubClass = document.getElementById("SubClass");
 
+var IncAtt1 = document.getElementById("IncAtt1");
+var IncAtt2 = document.getElementById("IncAtt2");
+var AB = document.getElementById("AB");
+
         var opt = document.createElement("option");
     
 SubClass.style.visibility = "hidden";
@@ -1395,6 +1399,9 @@ SubRaceLabel.style.visibility = "hidden";
     BRP.style.visibility = "visible";
      Prof5.style.visibility = "visible";
      Prof6.style.visibility = "visible";
+     IncAtt1.style.visibility = "visible";
+     IncAtt2.style.visibility = "visible";
+     AB.style.visibility = "visible";
  }
  else if(Race == "Halforc"){
     RProf = "Intimidation";
@@ -1419,6 +1426,13 @@ function Switch() {
     var Prof4 = document.getElementById("Prof4").value;
     var Prof5 = document.getElementById("Prof5").value;
     var Prof6 = document.getElementById("Prof6").value;
+
+    var IncAtt1=document.getElementById("IncAtt1").value;
+    var IncAtt2=document.getElementById("IncAtt2").value;
+if (IncAtt2 == IncAtt1) {
+    
+} else {
+    
 
     if (Class == "Rogue") {
         if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
@@ -1527,4 +1541,4 @@ function Switch() {
         }        
         }
     
-}
+}}

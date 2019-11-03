@@ -8,6 +8,10 @@ P2.style.visibility = "hidden";
 var FN = document.getElementById("FN").value; 
 var LN = document.getElementById("LN").value; 
 
+
+var IncAtt1 = document.getElementById("IncAtt1").value; 
+var IncAtt2 = document.getElementById("IncAtt2").value; 
+
 var str = document.getElementById("Strenght").value; 
 var dex = document.getElementById("Dexterity").value; 
 var con = document.getElementById("Constitution").value; 
@@ -158,48 +162,118 @@ if (Race == "Dwarf") {
   RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
   RLang1 = "Common";
   RLang2 = "Dwarfish";
+  con ++;
+  con ++;
+  if (SubRacevalue = "Hill Dwarf") {
+    wis++;
+  }
+  if (SubRacevalue = "Mountain Dwarf") {
+    str++;
+    str++;
+
+  }
 }
 else if (Race == "Elf") {
   RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
   RLang1 = "Common";
   RLang2 = "Elvish";
   RProf = "Perception, ";
+  dex++;
+  dex++;
+  if (SubRacevalue = "Dark Elf") {
+    cha++;
+  }
+  if (SubRacevalue = "Wood Elf") {
+    wis++;
+  }
   if (SubRaceval == "High Elf") {
     ALang1 = Lang1 +", ";    
+    int++;
   }
 }  
 else if (Race == "Halfling") {
   RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
   RLang1 = "Common";
   RLang2 = "Halfling";
+  dex++;
+  dex++;
+  if (SubRacevalue = "Lightfoot") {
+    cha++;
+  }
+  if (SubRacevalue = "Stout") {
+    con++;
+  }
 }  
 else if(Race == "Human"){
   RaceText = "Your race is " +Race +". <br>\n";
   RLang1 = "Common";
   ALang1 = Lang1 +"";
+  str++;
+  dex++;
+  con++;
+  int++;
+  wis++;
+  cha++;
 }
 else if (Race == "Dragonborn") {
   RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
   RLang1 = "Common";
   RLang2 = "Draconic";
+  str++;
+  str++;
+  cha++;
 }  
 else if (Race == "Gnome") {
   RaceText = "Your a " +SubRacevalue+ " which is a subrace of the "+Race +" race. <br>\n";
   RLang1 = "Common";
   RLang2 = "Gnomish";
+  int++;
+  int++;
+  if (SubRacevalue = "Forest Gnome") {
+    dex++;
+  }
+  if (SubRacevalue = "Rock Gnome") {
+    con++;
+  }
 }
 else if (Race == "Halfelf") {
   RaceText = "Your race is " +Race +". <br>\n";
   RLang1 = "Common";
   ALang1 = Lang1 +"";
+  cha++
+  cha++
+  if (IncAtt1 == "str" || IncAtt2 == "str") {
+    str++;
+      }
+  if (IncAtt1 == "dex" || IncAtt2 == "dex") {
+    dex++;
+      }
+  if (IncAtt1 == "con" || IncAtt2 == "con") {
+    con++;
+      }
+  if (IncAtt1 == "int" || IncAtt2 == "int") {
+    int++;
+      }
+  if (IncAtt1 == "wis" || IncAtt2 == "wis") {
+    wis++;
+      }
+  if (IncAtt1 == "cha" || IncAtt2 == "cha") {
+    cha++;
+      }
 }  
 else if(Race == "Halforc"){
   RaceText = "Your race is " +Race +". <br>\n";
   RLang1 = "Common";
   RLang2 = "Orc";
   RProf = "Intimidation, "
+  str++;
+  str++;
+  con++;
 }
 else if(Race == "Tiefling"){
+  int++;
+  cha++;
+  cha++;
   RaceText = "Your race is " +Race +". <br>\n";
   RLang1 = "Common";
   RLang2 = "Infernal";
@@ -304,7 +378,7 @@ if (y == "20") {
 }  else if (y == "5"|| y =="4") {
   attribute.push("-3");  
 }  else if (y == "3"|| y =="2") {
-  attribute.push("-2");
+  attribute.push("-4");
 }  else if (y == "1" ) {
   attribute.push("-5");
 } else {
