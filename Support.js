@@ -29,13 +29,17 @@ SubClassLabel.style.visibility = "hidden";
     var Prof5 = document.getElementById("Prof5");
     var Prof6 = document.getElementById("Prof6");
 
+    function CreOpt(value){
+        opt.value = value;
+      opt.text = value;
+      }
 
     if (Class=="Barbarian") {
         Prof1.style.visibility="visible";
         Prof2.style.visibility="visible";
 
     var opt = document.createElement("option");
-    var value="Animal Handling";
+    var ="Animal Handling";
     opt.value = value;
     opt.text = value;
     Prof1.add(opt);

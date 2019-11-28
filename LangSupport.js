@@ -169,9 +169,6 @@ if (Class == "Cleric" && SubClassval == "Knowledge") {
     opt.value = value;
     opt.text = value;
     SCB1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     SCB2.add(opt);
     
     var opt = document.createElement("option");
@@ -179,9 +176,6 @@ if (Class == "Cleric" && SubClassval == "Knowledge") {
     opt.value = value;
     opt.text = value;
     SCB1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     SCB2.add(opt);
     
     var opt = document.createElement("option");
@@ -189,9 +183,6 @@ if (Class == "Cleric" && SubClassval == "Knowledge") {
     opt.value = value;
     opt.text = value;
     SCB1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     SCB2.add(opt);
     
     var opt = document.createElement("option");
@@ -199,9 +190,6 @@ if (Class == "Cleric" && SubClassval == "Knowledge") {
     opt.value = value;
     opt.text = value;
     SCB1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     SCB2.add(opt);
 
     
