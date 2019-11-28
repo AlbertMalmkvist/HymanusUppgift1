@@ -29,6 +29,15 @@ SubClassLabel.style.visibility = "hidden";
     var Prof5 = document.getElementById("Prof5");
     var Prof6 = document.getElementById("Prof6");
 
+    function Switching(){
+        var Source = document.createElement("script");
+        Source.src = "Support2.js";
+        Source.innerHTML = null;
+        Source.id = "Source";
+        document.getElementById("output").innerHTML = "";
+        document.getElementById("output").appendChild(Source);  
+    }
+
     function CreOpt(value){
         opt.value = value;
       opt.text = value;
@@ -39,63 +48,33 @@ SubClassLabel.style.visibility = "hidden";
         Prof2.style.visibility="visible";
 
     var opt = document.createElement("option");
-    var ="Animal Handling";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Animal Handling");;
     Prof1.add(opt);
-    var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt); 
     
         var opt = document.createElement("option");
-     value="Athletics";
-    opt.value = value;
-    opt.text = value;
+     CreOpt("Athletics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);  
 
         var opt = document.createElement("option");
-    value="Intimidation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Intimidation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-     value="Nature";
-    opt.value = value;
-    opt.text = value;
+     CreOpt("Nature");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-     value="Perception";
-    opt.value = value;
-    opt.text = value;
+     CreOpt("Perception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-     value="Survival";
-    opt.value = value;
-    opt.text = value;
+     CreOpt("Survival");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);     
     }
     else if(Class=="Bard"){
@@ -104,255 +83,111 @@ SubClassLabel.style.visibility = "hidden";
         Prof3.style.visibility="visible";
 
         var opt = document.createElement("option");
-        var value="Acrobatics";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Acrobatics");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
 
         var opt = document.createElement("option");
-        var value="Animal Handling";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Animal Handling");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
 
         var opt = document.createElement("option");
-        var value="Arcana";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Arcana");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
     
         var opt = document.createElement("option");
-        var value="Athletics";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Athletics");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);  
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Deception";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Deception");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="History";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("History");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Insight";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Insight");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
     
         var opt = document.createElement("option");
-        var value="Intimidation";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Intimidation");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Investigation";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Investigation");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Medicine";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Medicine");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Nature";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Nature");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Perception";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Perception");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Peformance";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Peformance");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Persuasion";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Persuasion");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Religion";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Religion");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Sleight of Hand";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Sleight of Hand");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Stealth";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Stealth");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
         
         var opt = document.createElement("option");
-        var value="Survival";
-        opt.value = value;
-        opt.text = value;
+        CreOpt("Survival");
         Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
         Prof3.add(opt);
     }
 else if (Class == "Cleric") {
@@ -363,53 +198,28 @@ else if (Class == "Cleric") {
     Prof2.style.visibility="visible";
     
         var opt = document.createElement("option");
-    var value="History";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("History");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Medicine";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Medicine");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Persuasion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Persuasion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
     SubClassLabel.innerHTML = "Domain";
@@ -424,83 +234,43 @@ else if(Class=="Druid"){
     Prof2.style.visibility="visible";
 
         var opt = document.createElement("option");
-    var value="Animal Handling";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Animal Handling");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Arcana";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Arcana");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Medicine";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Medicine");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Nature";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Nature");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Perception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Perception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Survival";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Survival");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt); 
 }
 else if(Class == "Fighter") {
@@ -511,83 +281,43 @@ else if(Class == "Fighter") {
     Prof2.style.visibility="visible";
 
         var opt = document.createElement("option"); 
-    var value="Acrobatics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Acrobatics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Animal Handling";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Animal Handling");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Athletics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Athletics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);  
     
         var opt = document.createElement("option");
-    var value="History";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("History");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Intimidation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Intimidation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Perception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Perception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Survival";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Survival");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt); 
 
     SubClassLabel.innerHTML = "Fighting Style";
@@ -602,63 +332,33 @@ else if(Class=="Monk"){
     Prof2.style.visibility="visible";
     
         var opt = document.createElement("option");
-    var value="Acrobatics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Acrobatics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Athletics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Athletics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);  
     
         var opt = document.createElement("option");
-    var value="History";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("History");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Stealth";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Stealth");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 }
 else if(Class=="Paladin"){
@@ -666,63 +366,33 @@ else if(Class=="Paladin"){
     Prof2.style.visibility="visible";
 
         var opt = document.createElement("option");
-    var value="Athletics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Athletics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);  
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Intimidation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Intimidation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Medicine";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Medicine");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Persuasion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Persuasion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 }
 else if(Class=="Ranger"){
@@ -731,115 +401,51 @@ else if(Class=="Ranger"){
     Prof3.style.visibility="visible";
 
         var opt = document.createElement("option");
-    var value="Animal Handling";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Animal Handling");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
 
         var opt = document.createElement("option");
-    var value="Athletics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Athletics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);  
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
     
         var opt = document.createElement("option");
-    var value="Investigation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Investigation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
     
         var opt = document.createElement("option");
-    var value="Nature";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Nature");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
     
         var opt = document.createElement("option");
-    var value="Perception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Perception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
     
         var opt = document.createElement("option");
-    var value="Stealth";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Stealth");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
     
         var opt = document.createElement("option");
-    var value="Survival";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Survival");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt); 
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
 }
 else if(Class == "Rogue"){
@@ -849,201 +455,80 @@ else if(Class == "Rogue"){
     Prof4.style.visibility = "visible";
 
         var opt = document.createElement("option");
-    var value="Acrobatics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Acrobatics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
 
         var opt = document.createElement("option");
-    var value="Athletics";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Athletics");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);  
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Deception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Deception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
 
         var opt = document.createElement("option");
-    var value="Intimidation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Intimidation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Investigation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Investigation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Perception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Perception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Peformance";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Peformance");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Persuasion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Persuasion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Sleight of Hand";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Sleight of Hand");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
     
         var opt = document.createElement("option");
-    var value="Stealth";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Stealth");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof3.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof4.add(opt);
 }
 else if (Class == "Sorcerrer") {
@@ -1054,63 +539,33 @@ else if (Class == "Sorcerrer") {
     Prof2.style.visibility="visible";
 
         var opt = document.createElement("option");
-    var value="Arcana";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Arcana");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Deception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Deception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Intimidation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Intimidation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Persuasion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Persuasion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
     SubClassLabel.innerHTML = "Sorcerous Origin";
@@ -1131,73 +586,38 @@ else if (Class == "Warlock") {
     Prof2.style.visibility="visible";
 
         var opt = document.createElement("option");
-    var value="Arcana";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Arcana");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Deception";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Deception");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="History";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("History");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Intimidation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Intimidation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Investigation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Investigation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
         var opt = document.createElement("option");
-    var value="Nature";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Nature");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 
     SubClassLabel.innerHTML = "Patron";
@@ -1215,449 +635,421 @@ else if(Class=="Wizard"){
     Prof2.style.visibility = "visible";
 
         var opt = document.createElement("option");
-    var value="Arcana";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Arcana");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="History";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("History");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Insight";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Insight");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Investigation";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Investigation");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Medicine";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Medicine");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
     
         var opt = document.createElement("option");
-    var value="Religion";
-    opt.value = value;
-    opt.text = value;
+    CreOpt("Religion");
     Prof1.add(opt);
-        var opt = document.createElement("option");
-    opt.value = value;
-    opt.text = value;
     Prof2.add(opt);
 }
       else {
+}
+for (let i = 0; i < numbersR; i++) {
+    if (i => 2) {
+SubRace.remove(2);         
+    }
+}
 }  
+else if (Race == "Elf") {
+SubRaceLabel.style.visibility = "visible";
+SubRace.style.visibility = "visible";
+
+var numbersR = SubRace.length;
+for (let i = 0; i < numbersR; i++) {
+    if (i < 2) {
+SubRace.remove(0);         
+    }
+    if (i > 4) {
+SubRace.remove(3); 
+    }
+}
+
+RProf = "Perception";
+RaceCom =" and "+RProf+" from your race."
+}  
+else if (Race == "Halfling") {
+SubRaceLabel.style.visibility = "visible";
+SubRace.style.visibility = "visible";
+var numbersR = SubRace.length;
+for (let i = 0; i < numbersR; i++) {
+    if (i < 5) {
+SubRace.remove(0);         
+    }
+    if (i > 6) {
+SubRace.remove(2); 
+    }
+}
+}  
+else if(Race == "Human"){
+
+}
+else if (Race == "Dragonborn") {
+SubRaceLabel.style.visibility = "visible";
+SubRace.style.visibility = "visible";
+var numbersR = SubRace.length;
+for (let i = 0; i < numbersR; i++) {
+    if (i < 7) {
+SubRace.remove(0);         
+    }
+    if (i > 16) {
+SubRace.remove(10); 
+    }
+}
+}  
+else if (Race == "Gnome") {
+SubRaceLabel.style.visibility = "visible";
+SubRace.style.visibility = "visible";
+var numbersR = SubRace.length;
+for (let i = 0; i < numbersR; i++) {
+    if (i < 17) {
+SubRace.remove(0);         
+    }
+}
+} 
+else if(Race == "Halfelf"){
+BRP.style.visibility = "visible";
+Prof5.style.visibility = "visible";
+Prof6.style.visibility = "visible";
+IncAtt1.style.visibility = "visible";
+IncAtt2.style.visibility = "visible";
+AB.style.visibility = "visible";
+}
+else if(Race == "Halforc"){
+RProf = "Intimidation";
+RaceCom =" and "+RProf+" from your race."
+
+}
+else if(Race == "Tiefling"){
+
+}
+else{}
+var ProfLabel = document.getElementById("ProfLabel");
+ProfLabel.style.visibility = "visible";
+
+var  Info = document.getElementById("Info");
+Info.innerHTML = "You got proficiencies in "+DProf1+" and "+DProf2+" from your background"+RaceCom;
+
+function Switch() { 
+
+var Prof1 = document.getElementById("Prof1").value;
+var Prof2 = document.getElementById("Prof2").value;
+var Prof3 = document.getElementById("Prof3").value;
+var Prof4 = document.getElementById("Prof4").value;
+var Prof5 = document.getElementById("Prof5").value;
+var Prof6 = document.getElementById("Prof6").value;
+
+var IncAtt1=document.getElementById("IncAtt1").value;
+var IncAtt2=document.getElementById("IncAtt2").value;
+if (Race == "Halfelf") {
+   if (IncAtt2 == IncAtt1) {
+       
+   } else {
+       
+   
+       if (Class == "Rogue") {
+           if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
+               
+           }else{
+           if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 ) {
+               
+           } else {
+               if (  DProf2 == Prof1 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
+                   
+               }                
+           else {
+               if (Race == "Elf" || Race == "Halforc") {
+               if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
+                   
+               } 
+               else {
+               
+           var Source = document.createElement("script");
+           Source.src = "LangSupport.js";
+           Source.innerHTML = null;
+           Source.id = "Source";
+           document.getElementById("output").innerHTML = "";
+           document.getElementById("output").appendChild(Source);
+               }     
+           }
+               else if (Race == "Halfelf") {
+                   
+           if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
+               
+           }else{
+               var Source = document.createElement("script");
+               Source.src = "LangSupport.js";
+               Source.innerHTML = null;
+               Source.id = "Source";
+               document.getElementById("output").innerHTML = "";
+               document.getElementById("output").appendChild(Source);
+               
+           }
+               } else {
+                   var Source = document.createElement("script");
+                   Source.src = "LangSupport.js";
+                   Source.innerHTML = null;
+                   Source.id = "Source";
+                   document.getElementById("output").innerHTML = "";
+                   document.getElementById("output").appendChild(Source);
+                   
+               }        
+           } 
+               }
+           }
+       } else {
+           if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
+               
+           } 
+           else {
+               
+           if (DProf1 == Prof1 || DProf1 == Prof2 || DProf1 == Prof3) {
+               
+           } 
+           else {
+               
+           if (DProf2 == Prof1 || DProf2 == Prof2 || DProf2 == Prof3) {
+               
+           } 
+           else {
+               if (Race == "Elf" || Race == "Halforc") {
+                   
+               if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3) {
+                   
+               } 
+               else {
+               
+           var Source = document.createElement("script");
+           Source.src = "LangSupport.js";
+           Source.innerHTML = null;
+           Source.id = "Source";
+           document.getElementById("output").innerHTML = "";
+           document.getElementById("output").appendChild(Source);
+               }
+           }
+               else if (Race == "Halfelf") {
+                   
+           if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
+               
+           }else{
+               var Source = document.createElement("script");
+               Source.src = "LangSupport.js";
+               Source.innerHTML = null;
+               Source.id = "Source";
+               document.getElementById("output").innerHTML = "";
+               document.getElementById("output").appendChild(Source);
+               
+           }
+               } else {
+                   var Source = document.createElement("script");
+                   Source.src = "LangSupport.js";
+                   Source.innerHTML = null;
+                   Source.id = "Source";
+                   document.getElementById("output").innerHTML = "";
+                   document.getElementById("output").appendChild(Source);
+                   
+               }        
+           }        
+           }      
+           }        
+           }
+       
+   }}
+   
+else {
+   
+
+
+if (Class == "Rogue") {
+   if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
+       
+   }else{
+   if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 ) {
+       
+   } else {
+       if (  DProf2 == Prof1 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
+           
+       }                
+   else {
+       if (Race == "Elf" || Race == "Halforc") {
+       if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
+           
+       } 
+       else {
+       
+   var Source = document.createElement("script");
+   Source.src = "LangSupport.js";
+   Source.innerHTML = null;
+   Source.id = "Source";
+   document.getElementById("output").innerHTML = "";
+   document.getElementById("output").appendChild(Source);
+       }     
+   }
+       else if (Race == "Halfelf") {
+           
+   if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
+       
+   }else{
+       var Source = document.createElement("script");
+       Source.src = "LangSupport.js";
+       Source.innerHTML = null;
+       Source.id = "Source";
+       document.getElementById("output").innerHTML = "";
+       document.getElementById("output").appendChild(Source);
+       
+   }
+       } else {
+           var Source = document.createElement("script");
+           Source.src = "LangSupport.js";
+           Source.innerHTML = null;
+           Source.id = "Source";
+           document.getElementById("output").innerHTML = "";
+           document.getElementById("output").appendChild(Source);
+           
+       }        
+   } 
+       }
+   }
+} else {
+   if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
+       
+   } 
+   else {
+       
+   if (DProf1 == Prof1 || DProf1 == Prof2 || DProf1 == Prof3) {
+       
+   } 
+   else {
+       
+   if (DProf2 == Prof1 || DProf2 == Prof2 || DProf2 == Prof3) {
+       
+   } 
+   else {
+       if (Race == "Elf" || Race == "Halforc") {
+           
+       if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3) {
+           
+       } 
+       else {
+       
+   var Source = document.createElement("script");
+   Source.src = "LangSupport.js";
+   Source.innerHTML = null;
+   Source.id = "Source";
+   document.getElementById("output").innerHTML = "";
+   document.getElementById("output").appendChild(Source);
+       }
+   }
+       else if (Race == "Halfelf") {
+           
+   if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
+       
+   }else{
+       var Source = document.createElement("script");
+       Source.src = "LangSupport.js";
+       Source.innerHTML = null;
+       Source.id = "Source";
+       document.getElementById("output").innerHTML = "";
+       document.getElementById("output").appendChild(Source);
+       
+   }
+       } else {
+           var Source = document.createElement("script");
+           Source.src = "LangSupport.js";
+           Source.innerHTML = null;
+           Source.id = "Source";
+           document.getElementById("output").innerHTML = "";
+           document.getElementById("output").appendChild(Source);
+           
+       }        
+   }        
+   }      
+   }        
+   }
+
+}
+
 var DProf1="";
 var DProf2="";
 
 var  Background = document.getElementById("Background").value;
 
 if (Background == "Acolyte") {
-    DProf1="Insight";
-    DProf2="Religion";
+DProf1="Insight";
+DProf2="Religion";
 }  else if (Background == "Charlatan") {
-    DProf1="Deception";
-    DProf2="Sleight of Hand";    
+DProf1="Deception";
+DProf2="Sleight of Hand";    
 } else if (Background == "Criminal") {
-    DProf1="Deception";
-    DProf2="Stealth";    
+DProf1="Deception";
+DProf2="Stealth";    
 } else if (Background == "Entertainer") {
-    DProf1="Acrobatics";
-    DProf2="Peformance";
+DProf1="Acrobatics";
+DProf2="Peformance";
 } else if (Background == "Folk Hero") {
-    DProf1="Animal Handling";
-    DProf2="Survival";
+DProf1="Animal Handling";
+DProf2="Survival";
 } else if (Background == "Guild Artisan") {
-    DProf1="Insight";
-    DProf2="Persuasion";
+DProf1="Insight";
+DProf2="Persuasion";
 } else if (Background == "Hermit") {
-    DProf1="Medicine";
-    DProf2="Religion";
+DProf1="Medicine";
+DProf2="Religion";
 } else if (Background == "Noble") {
-    DProf1="History";
-    DProf2="Persuasion";
+DProf1="History";
+DProf2="Persuasion";
 } else if (Background == "Outlander") {
-    DProf1="Athletics";
-    DProf2="Survival";
+DProf1="Athletics";
+DProf2="Survival";
 } else if (Background == "Sage") {
-    DProf1="Arcana";
-    DProf2="History";
+DProf1="Arcana";
+DProf2="History";
 } else if (Background == "Sailor") {
-    DProf1="Athletics";
-    DProf2="Perception";
+DProf1="Athletics";
+DProf2="Perception";
 } else if (Background == "Soldier") {
-    DProf1="Athletics";
-    DProf2="Intimidation";
+DProf1="Athletics";
+DProf2="Intimidation";
 } else if (Background == "Urchin") {
-    DProf1="Sleight of Hand";
-    DProf2="Stealth";
+DProf1="Sleight of Hand";
+DProf2="Stealth";
 }else{
-    
+
 }
 
 var Race = document.getElementById("Race").value;
 var SubRace = document.getElementById("SubRace");
 var SubRaceLabel = document.getElementById("SRace"); 
 var BRP = document.getElementById("BRP");
-     var numbersR = SubRace.length;
+var numbersR = SubRace.length;
 var RaceCom = ".";
 var RProf = "None";
 SubRace.style.visibility = "hidden";
 SubRaceLabel.style.visibility = "hidden";
 
- if (Race == "Dwarf") {
-    SubRaceLabel.style.visibility = "visible";
-     SubRace.style.visibility = "visible";
-     for (let i = 0; i < numbersR; i++) {
-         if (i => 2) {
-     SubRace.remove(2);         
-         }
-     }
- }  
- else if (Race == "Elf") {
-    SubRaceLabel.style.visibility = "visible";
-     SubRace.style.visibility = "visible";
+if (Race == "Dwarf") {
+SubRaceLabel.style.visibility = "visible";
+SubRace.style.visibility = "visible";
 
-     var numbersR = SubRace.length;
-     for (let i = 0; i < numbersR; i++) {
-         if (i < 2) {
-     SubRace.remove(0);         
-         }
-         if (i > 4) {
-     SubRace.remove(3); 
-         }
-     }
-
-     RProf = "Perception";
-     RaceCom =" and "+RProf+" from your race."
- }  
- else if (Race == "Halfling") {
-    SubRaceLabel.style.visibility = "visible";
-     SubRace.style.visibility = "visible";
-     var numbersR = SubRace.length;
-     for (let i = 0; i < numbersR; i++) {
-         if (i < 5) {
-     SubRace.remove(0);         
-         }
-         if (i > 6) {
-     SubRace.remove(2); 
-         }
-     }
- }  
- else if(Race == "Human"){
-
- }
- else if (Race == "Dragonborn") {
-    SubRaceLabel.style.visibility = "visible";
-     SubRace.style.visibility = "visible";
-     var numbersR = SubRace.length;
-     for (let i = 0; i < numbersR; i++) {
-         if (i < 7) {
-     SubRace.remove(0);         
-         }
-         if (i > 16) {
-     SubRace.remove(10); 
-         }
-     }
- }  
- else if (Race == "Gnome") {
-    SubRaceLabel.style.visibility = "visible";
-     SubRace.style.visibility = "visible";
-     var numbersR = SubRace.length;
-     for (let i = 0; i < numbersR; i++) {
-         if (i < 17) {
-     SubRace.remove(0);         
-         }
-     }
- } 
- else if(Race == "Halfelf"){
-    BRP.style.visibility = "visible";
-     Prof5.style.visibility = "visible";
-     Prof6.style.visibility = "visible";
-     IncAtt1.style.visibility = "visible";
-     IncAtt2.style.visibility = "visible";
-     AB.style.visibility = "visible";
- }
- else if(Race == "Halforc"){
-    RProf = "Intimidation";
-    RaceCom =" and "+RProf+" from your race."
-
- }
- else if(Race == "Tiefling"){
-
- }
- else{}
- var ProfLabel = document.getElementById("ProfLabel");
-ProfLabel.style.visibility = "visible";
-
- var  Info = document.getElementById("Info");
-Info.innerHTML = "You got proficiencies in "+DProf1+" and "+DProf2+" from your background"+RaceCom;
-
-function Switch() { 
-
-    var Prof1 = document.getElementById("Prof1").value;
-    var Prof2 = document.getElementById("Prof2").value;
-    var Prof3 = document.getElementById("Prof3").value;
-    var Prof4 = document.getElementById("Prof4").value;
-    var Prof5 = document.getElementById("Prof5").value;
-    var Prof6 = document.getElementById("Prof6").value;
-
-    var IncAtt1=document.getElementById("IncAtt1").value;
-    var IncAtt2=document.getElementById("IncAtt2").value;
-    if (Race == "Halfelf") {
-        if (IncAtt2 == IncAtt1) {
-            
-        } else {
-            
-        
-            if (Class == "Rogue") {
-                if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
-                    
-                }else{
-                if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 ) {
-                    
-                } else {
-                    if (  DProf2 == Prof1 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
-                        
-                    }                
-                else {
-                    if (Race == "Elf" || Race == "Halforc") {
-                    if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
-                        
-                    } 
-                    else {
-                    
-                var Source = document.createElement("script");
-                Source.src = "LangSupport.js";
-                Source.innerHTML = null;
-                Source.id = "Source";
-                document.getElementById("output").innerHTML = "";
-                document.getElementById("output").appendChild(Source);
-                    }     
-                }
-                    else if (Race == "Halfelf") {
-                        
-                if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
-                    
-                }else{
-                    var Source = document.createElement("script");
-                    Source.src = "LangSupport.js";
-                    Source.innerHTML = null;
-                    Source.id = "Source";
-                    document.getElementById("output").innerHTML = "";
-                    document.getElementById("output").appendChild(Source);
-                    
-                }
-                    } else {
-                        var Source = document.createElement("script");
-                        Source.src = "LangSupport.js";
-                        Source.innerHTML = null;
-                        Source.id = "Source";
-                        document.getElementById("output").innerHTML = "";
-                        document.getElementById("output").appendChild(Source);
-                        
-                    }        
-                } 
-                    }
-                }
-            } else {
-                if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
-                    
-                } 
-                else {
-                    
-                if (DProf1 == Prof1 || DProf1 == Prof2 || DProf1 == Prof3) {
-                    
-                } 
-                else {
-                    
-                if (DProf2 == Prof1 || DProf2 == Prof2 || DProf2 == Prof3) {
-                    
-                } 
-                else {
-                    if (Race == "Elf" || Race == "Halforc") {
-                        
-                    if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3) {
-                        
-                    } 
-                    else {
-                    
-                var Source = document.createElement("script");
-                Source.src = "LangSupport.js";
-                Source.innerHTML = null;
-                Source.id = "Source";
-                document.getElementById("output").innerHTML = "";
-                document.getElementById("output").appendChild(Source);
-                    }
-                }
-                    else if (Race == "Halfelf") {
-                        
-                if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
-                    
-                }else{
-                    var Source = document.createElement("script");
-                    Source.src = "LangSupport.js";
-                    Source.innerHTML = null;
-                    Source.id = "Source";
-                    document.getElementById("output").innerHTML = "";
-                    document.getElementById("output").appendChild(Source);
-                    
-                }
-                    } else {
-                        var Source = document.createElement("script");
-                        Source.src = "LangSupport.js";
-                        Source.innerHTML = null;
-                        Source.id = "Source";
-                        document.getElementById("output").innerHTML = "";
-                        document.getElementById("output").appendChild(Source);
-                        
-                    }        
-                }        
-                }      
-                }        
-                }
-            
-        }}
-        
-     else {
-        
-    
-
-    if (Class == "Rogue") {
-        if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3 || Prof1 == Prof4 || Prof2 == Prof4 || Prof3 == Prof4 ) {
-            
-        }else{
-        if (DProf1 == Prof1 || DProf1 ==Prof2 || DProf1 == Prof3 || DProf1 == Prof4 ) {
-            
-        } else {
-            if (  DProf2 == Prof1 || DProf2 ==Prof2 || DProf2 == Prof3 || DProf2 == Prof4) {
-                
-            }                
-        else {
-            if (Race == "Elf" || Race == "Halforc") {
-            if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3 || RProf == Prof4) {
-                
-            } 
-            else {
-            
-        var Source = document.createElement("script");
-        Source.src = "LangSupport.js";
-        Source.innerHTML = null;
-        Source.id = "Source";
-        document.getElementById("output").innerHTML = "";
-        document.getElementById("output").appendChild(Source);
-            }     
-        }
-            else if (Race == "Halfelf") {
-                
-        if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == Prof4 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == Prof4 || Prof6 == DProf1 || Prof6 == DProf2) {
-            
-        }else{
-            var Source = document.createElement("script");
-            Source.src = "LangSupport.js";
-            Source.innerHTML = null;
-            Source.id = "Source";
-            document.getElementById("output").innerHTML = "";
-            document.getElementById("output").appendChild(Source);
-            
-        }
-            } else {
-                var Source = document.createElement("script");
-                Source.src = "LangSupport.js";
-                Source.innerHTML = null;
-                Source.id = "Source";
-                document.getElementById("output").innerHTML = "";
-                document.getElementById("output").appendChild(Source);
-                
-            }        
-        } 
-            }
-        }
-    } else {
-        if (Prof1 == Prof2 || Prof1 == Prof3 || Prof2 == Prof3) {
-            
-        } 
-        else {
-            
-        if (DProf1 == Prof1 || DProf1 == Prof2 || DProf1 == Prof3) {
-            
-        } 
-        else {
-            
-        if (DProf2 == Prof1 || DProf2 == Prof2 || DProf2 == Prof3) {
-            
-        } 
-        else {
-            if (Race == "Elf" || Race == "Halforc") {
-                
-            if (RProf == Prof1 || RProf ==Prof2 || RProf == Prof3) {
-                
-            } 
-            else {
-            
-        var Source = document.createElement("script");
-        Source.src = "LangSupport.js";
-        Source.innerHTML = null;
-        Source.id = "Source";
-        document.getElementById("output").innerHTML = "";
-        document.getElementById("output").appendChild(Source);
-            }
-        }
-            else if (Race == "Halfelf") {
-                
-        if (Prof5 == Prof6 || Prof5 == Prof1 || Prof5 == Prof2 || Prof5 == Prof3 || Prof5 == DProf1 || Prof5 == DProf2 || Prof6 == Prof1 || Prof6 == Prof2 || Prof6 == Prof3 || Prof6 == DProf1 || Prof6 == DProf2) {
-            
-        }else{
-            var Source = document.createElement("script");
-            Source.src = "LangSupport.js";
-            Source.innerHTML = null;
-            Source.id = "Source";
-            document.getElementById("output").innerHTML = "";
-            document.getElementById("output").appendChild(Source);
-            
-        }
-            } else {
-                var Source = document.createElement("script");
-                Source.src = "LangSupport.js";
-                Source.innerHTML = null;
-                Source.id = "Source";
-                document.getElementById("output").innerHTML = "";
-                document.getElementById("output").appendChild(Source);
-                
-            }        
-        }        
-        }      
-        }        
-        }
-    
-}
     }

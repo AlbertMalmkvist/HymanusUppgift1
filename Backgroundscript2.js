@@ -26,207 +26,207 @@ var Prof6 = document.getElementById("Prof6");
 
 
 for (let i = 0; i < 100; i++){
-    Prof1.remove(0);
-    Prof2.remove(0);
-    Prof3.remove(0);
-    Prof4.remove(0);
-    
+ Prof1.remove(0);
+ Prof2.remove(0);
+ Prof3.remove(0);
+ Prof4.remove(0);
+ 
  SubClass.remove(0);
 
  SubRace.remove(0);
-}        
-     
-  var opt = document.createElement("option");
+} 
+ 
+ var opt = document.createElement("option");
 function CreOpt(value){
-  opt.value = value;
+ opt.value = value;
 opt.text = value;
 }
 
 var value="Knowledge";
 CreOpt(value);
 SubClass.add(opt);
-var      value="Life";
+var value="Life";
+CreOpt(value);
+ SubClass.add(opt);
+ 
+var value="Light";
 CreOpt(value);
   SubClass.add(opt);
-    
-var      value="Light";
-CreOpt(value);
-   SubClass.add(opt);
 
-var       value="Nature";
+var value="Nature";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Tempest";
+var value="Tempest";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Trickery";   
+var value="Trickery";  
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="War";
+var value="War";
 CreOpt(value);
-   SubClass.add(opt);
-   
-    
-var       value="Draconic Bloodline";
+  SubClass.add(opt);
+  
+ 
+var value="Draconic Bloodline";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Wild Magic";
+var value="Wild Magic";
 CreOpt(value);
-   SubClass.add(opt);
-   
-    
-var        value="The Archfey";
+  SubClass.add(opt);
+  
+ 
+var value="The Archfey";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="The Fiend";
+var value="The Fiend";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="The Great Old One";
+var value="The Great Old One";
 CreOpt(value);
-   SubClass.add(opt);
-   
-    
-var       value="Archery";  
+  SubClass.add(opt);
+  
+ 
+var value="Archery"; 
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Defense";  
+var value="Defense"; 
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Dueling";
+var value="Dueling";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Great Weapon Fighting";
+var value="Great Weapon Fighting";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Protection";
+var value="Protection";
 CreOpt(value);
-   SubClass.add(opt);
+  SubClass.add(opt);
 
-var      value="Two-Weapon Fighting"; 
+var value="Two-Weapon Fighting"; 
 CreOpt(value);
  SubClass.add(opt);
 
  
-        
-var    value="Hill Dwarf";
-CreOpt(value);
-   SubRace.add(opt);
-
-var      value="Mountain Dwarf";
+ 
+var value="Hill Dwarf";
 CreOpt(value);
   SubRace.add(opt);
 
-
-var     value="High Elf" ;
+var value="Mountain Dwarf";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Wood Elf";
+
+var value="High Elf" ;
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Dark Elf";
+var value="Wood Elf";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-
-var     value="Lightfoot";
+var value="Dark Elf";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Stout";
+
+var value="Lightfoot";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-
-var     value="Black";
+var value="Stout";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Blue";
+
+var value="Black";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Brass";
+var value="Blue";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Bronze";
+var value="Brass";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Copper";
+var value="Bronze";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Gold";
+var value="Copper";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Green";
+var value="Gold";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Red";
+var value="Green";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Silver";
+var value="Red";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="White";
+var value="Silver";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-
-var     value="Rock Gnome";
+var value="White";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
 
-var     value="Forest Gnome";
+
+var value="Rock Gnome";
 CreOpt(value);
-  SubRace.add(opt);
+ SubRace.add(opt);
+
+var value="Forest Gnome";
+CreOpt(value);
+ SubRace.add(opt);
 
 function Switch() { 
-    var FN = document.getElementById("FN").value;
-    if (FN == "") {
-        
-    }
-    else{ 
-        var LN = document.getElementById("LN").value;
-        if (LN == "") {
-            
-        } else {
-    var Source = document.createElement("script");
-    Source.src = "Support.js";
-    Source.innerHTML = null;
-    Source.id = "Source";
-    document.getElementById("output").innerHTML = "";
-    document.getElementById("output").appendChild(Source);
-        }
-    }
+ var FN = document.getElementById("FN").value;
+ if (FN == "") {
+ 
+ }
+ else{ 
+ var LN = document.getElementById("LN").value;
+ if (LN == "") {
+ 
+ } else {
+ var Source = document.createElement("script");
+ Source.src = "Support.js";
+ Source.innerHTML = null;
+ Source.id = "Source";
+ document.getElementById("output").innerHTML = "";
+ document.getElementById("output").appendChild(Source);
+ }
+ }
 }
 
 var Label2 = document.getElementsByName("Label2");
 for (let i = 0, length = Label2.length; i < length; i++) {
-    Label2[i].style.visibility = "hidden";
+ Label2[i].style.visibility = "hidden";
 }
 var Label1 = document.getElementsByName("Label1");
 var PAlingement = document.getElementsByName("PAlingement");
 for (let i = 0, length = Label1.length; i < length; i++) {
-    Label1[i].style.visibility = "visible";
+ Label1[i].style.visibility = "visible";
 }
 for (let i = 0, length = PAlingement.length; i < length; i++) {
-    PAlingement[i].style.visibility = "visible";
+ PAlingement[i].style.visibility = "visible";
 }
