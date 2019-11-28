@@ -36,234 +36,166 @@ for (let i = 0; i < 100; i++){
  SubRace.remove(0);
 }        
      
-var opt = document.createElement("option");
-var value="Knowledge";
-opt.value = value;
-opt.text = value;
-SubClass.add(opt);
-var opt = document.createElement("option");
-var      value="Life";
+  var opt = document.createElement("option");
+function CreOpt(value){
   opt.value = value;
-  opt.text = value;
+opt.text = value;
+}
+
+var value="Knowledge";
+CreOpt(value);
+SubClass.add(opt);
+var      value="Life";
+CreOpt(value);
   SubClass.add(opt);
     
-var opt = document.createElement("option");
 var      value="Light";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var       value="Nature";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Tempest";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Trickery";   
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="War";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
    
     
-var opt = document.createElement("option");
 var       value="Draconic Bloodline";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Wild Magic";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
    
     
-var opt = document.createElement("option");
 var        value="The Archfey";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="The Fiend";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="The Great Old One";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
    
     
-var opt = document.createElement("option");
 var       value="Archery";  
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Defense";  
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Dueling";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Great Weapon Fighting";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Protection";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubClass.add(opt);
 
-var opt = document.createElement("option");
 var      value="Two-Weapon Fighting"; 
-     opt.value = value;
-     opt.text = value;
+CreOpt(value);
  SubClass.add(opt);
 
  
         
-var opt = document.createElement("option");
 var    value="Hill Dwarf";
-   opt.value = value;
-   opt.text = value;
+CreOpt(value);
    SubRace.add(opt);
 
-var opt = document.createElement("option");
 var      value="Mountain Dwarf";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
 
-var opt = document.createElement("option");
 var     value="High Elf" ;
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Wood Elf";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Dark Elf";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
 
-var opt = document.createElement("option");
 var     value="Lightfoot";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Stout";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
 
-var opt = document.createElement("option");
 var     value="Black";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Blue";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Brass";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Bronze";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Copper";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Gold";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Green";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Red";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Silver";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="White";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
 
-var opt = document.createElement("option");
 var     value="Rock Gnome";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
-var opt = document.createElement("option");
 var     value="Forest Gnome";
-  opt.value = value;
-  opt.text = value;
+CreOpt(value);
   SubRace.add(opt);
 
 function Switch() { 
