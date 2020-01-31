@@ -80,6 +80,8 @@ SubClassLabel.style.visibility = "hidden";
         Prof2.style.visibility="visible";
         Prof3.style.visibility="visible";
 
+//var Array Skill["Acrobatics"; "Animal Handling";];
+
         var opt = document.createElement("option");
         CreOpt("Acrobatics");
         Prof1.add(opt);
@@ -669,8 +671,73 @@ for (let i = 0; i < numbersR; i++) {
 SubRace.remove(2);         
     }
 }
-}  
-else if (Race == "Elf") {
+
+
+
+var DProf1="";
+var DProf2="";
+
+var  Background = document.getElementById("Background").value;
+
+if (Background == "Acolyte") {
+DProf1="Insight";
+DProf2="Religion";
+}  else if (Background == "Charlatan") {
+DProf1="Deception";
+DProf2="Sleight of Hand";    
+} else if (Background == "Criminal") {
+DProf1="Deception";
+DProf2="Stealth";    
+} else if (Background == "Entertainer") {
+DProf1="Acrobatics";
+DProf2="Peformance";
+} else if (Background == "Folk Hero") {
+DProf1="Animal Handling";
+DProf2="Survival";
+} else if (Background == "Guild Artisan") {
+DProf1="Insight";
+DProf2="Persuasion";
+} else if (Background == "Hermit") {
+DProf1="Medicine";
+DProf2="Religion";
+} else if (Background == "Noble") {
+DProf1="History";
+DProf2="Persuasion";
+} else if (Background == "Outlander") {
+DProf1="Athletics";
+DProf2="Survival";
+} else if (Background == "Sage") {
+DProf1="Arcana";
+DProf2="History";
+} else if (Background == "Sailor") {
+DProf1="Athletics";
+DProf2="Perception";
+} else if (Background == "Soldier") {
+DProf1="Athletics";
+DProf2="Intimidation";
+} else if (Background == "Urchin") {
+DProf1="Sleight of Hand";
+DProf2="Stealth";
+}else{
+
+}
+
+var Race = document.getElementById("Race").value;
+var SubRace = document.getElementById("SubRace");
+var SubRaceLabel = document.getElementById("SRace"); 
+var BRP = document.getElementById("BRP");
+var numbersR = SubRace.length;
+var RaceCom = ".";
+var RProf = "None";
+SubRace.style.visibility = "hidden";
+SubRaceLabel.style.visibility = "hidden";
+
+if (Race == "Dwarf") {
+SubRaceLabel.style.visibility = "visible";
+SubRace.style.visibility = "visible";
+
+    }
+ else if (Race == "Elf") {
 SubRaceLabel.style.visibility = "visible";
 SubRace.style.visibility = "visible";
 
@@ -914,67 +981,4 @@ if (Class == "Rogue") {
    }
 
 }
-
-var DProf1="";
-var DProf2="";
-
-var  Background = document.getElementById("Background").value;
-
-if (Background == "Acolyte") {
-DProf1="Insight";
-DProf2="Religion";
-}  else if (Background == "Charlatan") {
-DProf1="Deception";
-DProf2="Sleight of Hand";    
-} else if (Background == "Criminal") {
-DProf1="Deception";
-DProf2="Stealth";    
-} else if (Background == "Entertainer") {
-DProf1="Acrobatics";
-DProf2="Peformance";
-} else if (Background == "Folk Hero") {
-DProf1="Animal Handling";
-DProf2="Survival";
-} else if (Background == "Guild Artisan") {
-DProf1="Insight";
-DProf2="Persuasion";
-} else if (Background == "Hermit") {
-DProf1="Medicine";
-DProf2="Religion";
-} else if (Background == "Noble") {
-DProf1="History";
-DProf2="Persuasion";
-} else if (Background == "Outlander") {
-DProf1="Athletics";
-DProf2="Survival";
-} else if (Background == "Sage") {
-DProf1="Arcana";
-DProf2="History";
-} else if (Background == "Sailor") {
-DProf1="Athletics";
-DProf2="Perception";
-} else if (Background == "Soldier") {
-DProf1="Athletics";
-DProf2="Intimidation";
-} else if (Background == "Urchin") {
-DProf1="Sleight of Hand";
-DProf2="Stealth";
-}else{
-
 }
-
-var Race = document.getElementById("Race").value;
-var SubRace = document.getElementById("SubRace");
-var SubRaceLabel = document.getElementById("SRace"); 
-var BRP = document.getElementById("BRP");
-var numbersR = SubRace.length;
-var RaceCom = ".";
-var RProf = "None";
-SubRace.style.visibility = "hidden";
-SubRaceLabel.style.visibility = "hidden";
-
-if (Race == "Dwarf") {
-SubRaceLabel.style.visibility = "visible";
-SubRace.style.visibility = "visible";
-
-    }
