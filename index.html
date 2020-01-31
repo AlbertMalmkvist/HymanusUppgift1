@@ -1,385 +1,189 @@
 <html>
-    <head>
-    <title>DnD Work</title>
-    <meta charset="UTF=8">
-    </head>
-    <body>
-        <h1 id="page1">DnD Sheet</h1><br>
-            <label id="FNL" name="Label1">First Name</label>
-            <input type="text" name="Label1" id="FN" ><br>
-            <label id="LNL" name="Label1">Last Name</label>
-            <input type="text" name="Label1" id="LN" ><br>
-            
-            <button id="P1" onclick="Reset()">Reset</button><br>
-            <label id="Conclusion"></label>
-            <label id="Chart"></label>
+<head>
+<title>DnD Work</title>
+<meta charset="UTF=8">
+</head>
+<body>
+<h1 id="page1">DnD Sheet</h1><br>
 
-            <label id="RaceL" name="Label1">Race</label>
+<label id="FNL" name="Label1">First Name</label>
+<input type="text" name="Label1" id="FN" ><br>
+<label id="LNL" name="Label1">Last Name</label>
+<input type="text" name="Label1" id="LN" ><br>
 
-            <select name="Label1" id="Race">
-                <option value="Dwarf">Dwarf</option>
-                <option value="Elf">Elf</option>
-                <option value="Halfling">Halfling</option>
-                <option value="Human">Human</option>
-                <option value="Dragonborn" >Dragonborn</option>
-                <option value="Gnome">Gnome</option>
-                <option value="Halfelf">Half-elf</option>
-                <option value="Halforc">Half-orc</option>
-                <option value="Tiefling">Tiefling</option>
-            </select>
+<button id="P1" onclick="Reset()">Reset</button><br>
+<label id="Conclusion"></label>
+<label id="Chart"></label>
 
-            <label id="BRP" name="Label2">Bonus Race Proficiencies</label>
-            <select name="Label2" id="Prof5">
-                    <option value="Acrobatics">Acrobatics</option>
-                    <option var value="Animal Handling">Animal Handling</option>
-                    <option var value="Arcana">Arcana</option>
-                    <option var value="Athletics">Athletics</option>
-                    <option var value="Deception">Deception</option>
-                    <option var value="History">History</option>
-                    <option var value="Insight">Insight</option>
-                    <option var value="Intimidation">Intimidation</option>
-                    <option var value="Investigation">Investigation</option>
-                    <option var value="Nature">Nature</option>
-                    <option var value="Perception">Perception</option>
-                    <option var value="Peformance">Peformance</option>
-                    <option var value="Persuasion">Persuasion</option>
-                    <option var value="Religion">Religion</option>
-                    <option var value="Sleight of Hand">Sleight of Hand</option>
-                    <option var value="Stealth">Stealth</option>
-                    <option var value="Survival">Survival</option>
-            </select>
+<label id="RaceL" name="Label1">Race</label>
 
-            <select name="Label2" id="Prof6">
-                    <option value="Acrobatics">Acrobatics</option>
-                    <option var value="Animal Handling">Animal Handling</option>
-                    <option var value="Arcana">Arcana</option>
-                    <option var value="Athletics">Athletics</option>
-                    <option var value="Deception">Deception</option>
-                    <option var value="History">History</option>
-                    <option var value="Insight">Insight</option>
-                    <option var value="Intimidation">Intimidation</option>
-                    <option var value="Investigation">Investigation</option>
-                    <option var value="Nature">Nature</option>
-                    <option var value="Perception">Perception</option>
-                    <option var value="Peformance">Peformance</option>
-                    <option var value="Persuasion">Persuasion</option>
-                    <option var value="Religion">Religion</option>
-                    <option var value="Sleight of Hand">Sleight of Hand</option>
-                    <option var value="Stealth">Stealth</option>
-                    <option var value="Survival">Survival</option>
-                 </select>
-            
-            <br>
-            <label id="SRace" name="Label2">Sub-Race</label>
-            <select name="Label2" id="SubRace">
-                <option value="Hill Dwarf" >Hill Dwarf</option>
-                <option value="Mountain Dwarf">Mountain Dwarf</option>
-                <option value="High Elf" >High Elf</option>
-                <option value="Wood Elf">Wood Elf</option>
-                <option value="Dark Elf">Dark Elf</option>
-                <option value="Lightfoot" >Lightfoot</option>
-                <option value="Stout">Stout</option>
-                <option value="Black" >Black</option>
-                <option value="Blue">Blue</option>
-                <option value="Brass">Brass</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Copper">Copper</option>
-                <option value="Gold">Gold</option>
-                <option value="Green">Green</option>
-                <option value="Red">Red</option>
-                <option value="Silver">Silver</option>
-                <option value="White">White</option>
-                <option value="Rock Gnome" >Rock Gnome</option>
-                <option value="Forest Gnome">Forest Gnome</option>
-            </select>
-            <label id="BRL" name="Label2">Bonus Race Language</label>
-            <select name="Label2" id="Lang1">
-                    <option value="Common">Common</option>
-                    <option value="Dwarfish">Dwarfish</option>
-                    <option value="Elvish">Elvish</option>
-                    <option value="Gaint">Gaint</option>
-                    <option value="Gnomish">Gnomish</option>
-                    <option value="Goblin">Goblin</option>
-                    <option value="Halfling">Halfling</option>
-                    <option value="Orc">Orc</option>
-                    <option value="Abyssal">Abyssal</option>
-                    <option value="Celestial">Celestial</option>
-                    <option value="Deep Speech">Deep Speech</option>
-                    <option value="Draconic">Draconic</option>
-                    <option value="Infernal">Infernal</option>
-                    <option value="Primordial">Primordial</option>
-                    <option value="Sylvan">Sylvan</option>
-                    <option value="Undercommon">Undercommon</option>
-            </select>
+<select name="Label1" id="Race">
+</select>
 
-            <label id="AB" name="Label2">Attribute Bonus</label>
-            <select name="Label2" id="IncAtt1">
-                <option value="str">Strenght</option>
-                <option value="dex">Dexterity</option>
-                <option value="con">Constitution</option>
-                <option value="int">Intelligence</option>
-                <option value="wis">Wisdom</option>
-                <option value="cha">Charisma</option>
-            </select>
-            <select name="Label2" id="IncAtt2">
-                <option value="str">Strenght</option>
-                <option value="dex">Dexterity</option>
-                <option value="con">Constitution</option>
-                <option value="int">Intelligence</option>
-                <option value="wis">Wisdom</option>
-                <option value="cha">Charisma</option>
-            </select>
-            
-            <br>
-            <label id="AL" name="Label1">Alingement</label><br>
-            <input type="radio" name="PAlingement" value="Lawful Good" > 
-            <label id="AL" name="Label1">Lawful Good</label>
-            <input type="radio" name="PAlingement" value="Neutral Good"> 
-            <label id="AL" name="Label1">Neutral Good</label>
-            <input type="radio" name="PAlingement" value="Chaotic Good"> 
-            <label id="AL" name="Label1">Chaotic Good</label><br> 
-            <input type="radio" name="PAlingement" value="Lawful Neutral" > 
-            <label id="AL" name="Label1">Lawful Neutral</label>
-            <input type="radio" name="PAlingement" value="Neutral" checked> 
-            <label id="AL" name="Label1">Neutral</label>
-            <input type="radio" name="PAlingement" value="Chaotic Neutral"> 
-            <label id="AL" name="Label1">Chaotic Neutral</label><br>
-            <input type="radio" name="PAlingement" value="Lawful Evil" > 
-            <label id="AL" name="Label1">Lawful Evil</label>
-            <input type="radio" name="PAlingement" value="Neutral Evil"> 
-            <label id="AL" name="Label1">Neutral Evil</label>
-            <input type="radio" name="PAlingement" value="Chaotic Evil"> 
-            <label id="AL" name="Label1">Chaotic Evil </label><br><br>
+<label id="BRP" name="Label2">Bonus Race Proficiencies</label>
+<select name="Label2" id="Prof5">
+</select>
 
-            <label id="CL" name="Label1">Class</label>
-            <select name="Label1" id="Class">
-                <option value="Barbarian">Barbarian</option>
-                <option value="Bard">Bard</option>
-                <option value="Cleric">Cleric</option>
-                <option value="Druid">Druid</option>
-                <option value="Fighter" >Fighter</option>
-                <option value="Monk">Monk</option>
-                <option value="Paladin">Paladin</option>
-                <option value="Ranger">Ranger</option>
-                <option value="Rogue">Rogue</option>
-                <option value="Sorcerrer">Sorcerrer</option>
-                <option value="Warlock">Warlock</option>
-                <option value="Wizard">Wizard</option>
-            </select>
-            
-            <br>
-            <label  id="SubClassLabel" name="Label2">Domain</label>
-            <select name="Label2" id="SubClass">
-                <option value="Knowledge" >Knowledge</option>
-                <option value="Life">Life</option>
-                <option value="Light">Light</option>
-                <option value="Nature">Nature</option>
-                <option value="Tempest">Tempest</option>
-                <option value="Trickery">Trickery</option>
-                <option value="War">War</option>
-                <option value="Draconic Bloodline">Draconic Bloodline</option>
-                <option value="Wild Magic">Wild Magic</option>
-                <option value="The Archfey">The Archfey</option>
-                <option value="The Fiend">The Fiend</option>
-                <option value="The Great Old One">The Great Old One</option>
-                <option value="Archery">Archery</option>
-                <option value="Defense">Defense</option>
-                <option value="Dueling">Dueling</option>
-                <option value="Great Weapon Fighting">Great Weapon Fighting</option>
-                <option value="Protection">Protection</option>
-                <option value="Two-Weapon Fighting">Two-Weapon Fighting</option>
-            </select>
+<select name="Label2" id="Prof6">
+</select>
 
-            <label  id="SubClassBonuslabel" name="Label2">Expertise</label>
-            <select name="Label2" id="SubClassBonus1">
-                
-            </select>
-            <select name="Label2" id="SubClassBonus2">
-                
-            </select>
-            <label  id="SubClassLanglabel" name="Label2"> Extra Languages</label>
-            
-            <select name="Label2" id="Lang2">
-                    <option value="Common">Common</option>
-                    <option value="Dwarfish">Dwarfish</option>
-                    <option value="Elvish">Elvish</option>
-                    <option value="Gaint">Gaint</option>
-                    <option value="Gnomish">Gnomish</option>
-                    <option value="Goblin">Goblin</option>
-                    <option value="Halfling">Halfling</option>
-                    <option value="Orc">Orc</option>
-                    <option value="Abyssal">Abyssal</option>
-                    <option value="Celestial">Celestial</option>
-                    <option value="Deep Speech">Deep Speech</option>
-                    <option value="Draconic">Draconic</option>
-                    <option value="Infernal">Infernal</option>
-                    <option value="Primordial">Primordial</option>
-                    <option value="Sylvan">Sylvan</option>
-                    <option value="Undercommon">Undercommon</option>
-            </select>
-            
-            <select name="Label2" id="Lang3">
-                    <option value="Common">Common</option>
-                    <option value="Dwarfish">Dwarfish</option>
-                    <option value="Elvish">Elvish</option>
-                    <option value="Gaint">Gaint</option>
-                    <option value="Gnomish">Gnomish</option>
-                    <option value="Goblin">Goblin</option>
-                    <option value="Halfling">Halfling</option>
-                    <option value="Orc">Orc</option>
-                    <option value="Abyssal">Abyssal</option>
-                    <option value="Celestial">Celestial</option>
-                    <option value="Deep Speech">Deep Speech</option>
-                    <option value="Draconic">Draconic</option>
-                    <option value="Infernal">Infernal</option>
-                    <option value="Primordial">Primordial</option>
-                    <option value="Sylvan">Sylvan</option>
-                    <option value="Undercommon">Undercommon</option>
-                </select>
-                
-            
-            <br>
-            <label id="Back" name="Label1">Background</label>
-            <select name="Label1" id="Background">
-                <option value="Acolyte">Acolyte</option>
-                <option value="Charlatan">Charlatan</option>
-                <option value="Criminal">Criminal</option>
-                <option value="Entertainer">Entertainer</option>
-                <option value="Folk Hero">Folk Hero</option>
-                <option value="Guild Artisan">Guild Artisan</option>
-                <option value="Hermit">Hermit</option>
-                <option value="Noble">Noble</option>
-                <option value="Outlander">Outlander</option>
-                <option value="Sage">Sage</option>
-                <option value="Sailor">Sailor</option>
-                <option value="Soldier">Soldier</option>
-                <option value="Urchin">Urchin</option>
-            </select>
+<br>
+<label id="SRace" name="Label2">Sub-Race</label>
+<select name="Label2" id="SubRace">
+</select>
+<label id="BRL" name="Label2">Bonus Race Language</label>
+<select name="Label2" id="Lang1">
+</select>
 
-            <label id="BackLang" name="Label2">Background Extra Language</label>
-            <select name="Label2" id="Lang4">
-                <option value="Common">Common</option>
-                <option value="Dwarfish">Dwarfish</option>
-                <option value="Elvish">Elvish</option>
-                <option value="Gaint">Gaint</option>
-                <option value="Gnomish">Gnomish</option>
-                <option value="Goblin">Goblin</option>
-                <option value="Halfling">Halfling</option>
-                <option value="Orc">Orc</option>
-                <option value="Abyssal">Abyssal</option>
-                <option value="Celestial">Celestial</option>
-                <option value="Deep Speech">Deep Speech</option>
-                <option value="Draconic">Draconic</option>
-                <option value="Infernal">Infernal</option>
-                <option value="Primordial">Primordial</option>
-                <option value="Sylvan">Sylvan</option>
-                <option value="Undercommon">Undercommon</option>
-            </select>
+<label id="AB" name="Label2">Attribute Bonus</label>
+<select name="Label2" id="IncAtt1">
+</select>
+<select name="Label2" id="IncAtt2">
+</select>
 
-            <select name="Label2" id="Lang5">
-                <option value="Common">Common</option>
-                <option value="Dwarfish">Dwarfish</option>
-                <option value="Elvish">Elvish</option>
-                <option value="Gaint">Gaint</option>
-                <option value="Gnomish">Gnomish</option>
-                <option value="Goblin">Goblin</option>
-                <option value="Halfling">Halfling</option>
-                <option value="Orc">Orc</option>
-                <option value="Abyssal">Abyssal</option>
-                <option value="Celestial">Celestial</option>
-                <option value="Deep Speech">Deep Speech</option>
-                <option value="Draconic">Draconic</option>
-                <option value="Infernal">Infernal</option>
-                <option value="Primordial">Primordial</option>
-                <option value="Sylvan">Sylvan</option>
-                <option value="Undercommon">Undercommon</option>
-            </select><br>
+<br>
+<label id="AL" name="Label1">Alingement</label><br>
+<input type="radio" name="PAlingement" value="Lawful Good" > 
+<label id="AL" name="Label1">Lawful Good</label>
+<input type="radio" name="PAlingement" value="Neutral Good"> 
+<label id="AL" name="Label1">Neutral Good</label>
+<input type="radio" name="PAlingement" value="Chaotic Good"> 
+<label id="AL" name="Label1">Chaotic Good</label><br> 
+<input type="radio" name="PAlingement" value="Lawful Neutral" > 
+<label id="AL" name="Label1">Lawful Neutral</label>
+<input type="radio" name="PAlingement" value="Neutral" checked> 
+<label id="AL" name="Label1">Neutral</label>
+<input type="radio" name="PAlingement" value="Chaotic Neutral"> 
+<label id="AL" name="Label1">Chaotic Neutral</label><br>
+<input type="radio" name="PAlingement" value="Lawful Evil" > 
+<label id="AL" name="Label1">Lawful Evil</label>
+<input type="radio" name="PAlingement" value="Neutral Evil"> 
+<label id="AL" name="Label1">Neutral Evil</label>
+<input type="radio" name="PAlingement" value="Chaotic Evil"> 
+<label id="AL" name="Label1">Chaotic Evil </label><br><br>
 
-            <label name="Label2" id="ProfLabel">Proficiencies:</label>
-            
-            <select name="Label2" id="Prof1">
-            </select>
-            
-            <select name="Label2" id="Prof2">
-            </select>
+<label id="CL" name="Label1">Class</label>
+<select name="Label1" id="Class">
+</select>
 
-            <select name="Label2" id="Prof3">
-            </select>
+<br>
+<label  id="SubClassLabel" name="Label2">Domain</label>
+<select name="Label2" id="SubClass">
+</select>
 
-            <select name="Label2" id="Prof4">
-            </select>
-            
+<label  id="SubClassBonuslabel" name="Label2">Expertise</label>
+<select name="Label2" id="SubClassBonus1">
 
-            <br>
-            <label id="Info"></label>
+</select>
+<select name="Label2" id="SubClassBonus2">
 
-            <label id="str" name="Label1">Strenght</label>
-            <select name="Label1" id="Strenght">
-            </select>
-            
-            <br>
-            <label id="dex" name="Label1">Dexterity</label>
-            <select name="Label1" id="Dexterity">
-            </select>
-            
-            <br>
-            <label id="con" name="Label1">Constitution</label>
-            <select name="Label1" id="Constitution">
-            </select>
-            
-            <br>
-            <label id="int" name="Label1">Intelligence</label>
-            <select name="Label1" id="Intelligence">
-            </select>
-            
-            <br>
-            <label id="wis" name="Label1">Wisdom</label>
-            <select name="Label1" id="Wisdom">
-            </select>
-            
-            <br>
-            <label id="cha" name="Label1">Charisma</label>
-            <select name="Label1" id="Charisma">
-            </select>
-            <script>
-            var str = document.getElementById("Strenght"); 
-            var dex = document.getElementById("Dexterity"); 
-            var con = document.getElementById("Constitution"); 
-            var int = document.getElementById("Intelligence"); 
-            var wis = document.getElementById("Wisdom"); 
-            var cha = document.getElementById("Charisma");     
+</select>
+<label  id="SubClassLanglabel" name="Label2"> Extra Languages</label>
+
+<select name="Label2" id="Lang2">
+</select>
+
+<select name="Label2" id="Lang3">
+</select>
+
+
+<br>
+<label id="Back" name="Label1">Background</label>
+<select name="Label1" id="Background">
+</select>
+
+<label id="BackLang" name="Label2">Background Extra Language</label>
+<select name="Label2" id="Lang4">
+</select>
+
+<select name="Label2" id="Lang5">
+</select><br>
+
+<label name="Label2" id="ProfLabel">Proficiencies:</label>
+
+<select name="Label2" id="Prof1">
+</select>
+
+<select name="Label2" id="Prof2">
+</select>
+
+<select name="Label2" id="Prof3">
+</select>
+
+<select name="Label2" id="Prof4">
+</select>
+
+
+<br>
+<label id="Info"></label>
+
+<label id="str" name="Label1">Strenght</label>
+<select name="Label1" id="Strenght">
+</select>
+
+<br>
+<label id="dex" name="Label1">Dexterity</label>
+<select name="Label1" id="Dexterity">
+</select>
+
+<br>
+<label id="con" name="Label1">Constitution</label>
+<select name="Label1" id="Constitution">
+</select>
+
+<br>
+<label id="int" name="Label1">Intelligence</label>
+<select name="Label1" id="Intelligence">
+</select>
+
+<br>
+<label id="wis" name="Label1">Wisdom</label>
+<select name="Label1" id="Wisdom">
+</select>
+
+<br>
+<label id="cha" name="Label1">Charisma</label>
+<select name="Label1" id="Charisma">
+</select>
+<script>
+var str = document.getElementById("Strenght"); 
+var dex = document.getElementById("Dexterity"); 
+var con = document.getElementById("Constitution"); 
+var int = document.getElementById("Intelligence"); 
+var wis = document.getElementById("Wisdom"); 
+var cha = document.getElementById("Charisma");     
 
 for (var i = 1; i<=18; i++){
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.text = i;
-    str.appendChild(opt);
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.text = i;
-    dex.appendChild(opt);
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.text = i;
-    con.appendChild(opt);
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.text = i;
-    int.appendChild(opt);
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.text = i;
-    cha.appendChild(opt);
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.text = i;
-    wis.appendChild(opt);
+var opt = document.createElement('option');
+opt.value = i;
+opt.text = i;
+str.appendChild(opt);
+var opt = document.createElement('option');
+opt.value = i;
+opt.text = i;
+dex.appendChild(opt);
+var opt = document.createElement('option');
+opt.value = i;
+opt.text = i;
+con.appendChild(opt);
+var opt = document.createElement('option');
+opt.value = i;
+opt.text = i;
+int.appendChild(opt);
+var opt = document.createElement('option');
+opt.value = i;
+opt.text = i;
+cha.appendChild(opt);
+var opt = document.createElement('option');
+opt.value = i;
+opt.text = i;
+wis.appendChild(opt);
 }       
 </script>
-            <br>
-            <button id="P2" onclick="Switch()">Change</button>
-            <div id="output">
-            <script id="Source" src="Backgroundscript2.js"></script>
-        </div>
-    </body>
+<br>
+<button id="P2" onclick="Switch()">Change</button>
+<div id="output">
+<script id="Source" src="Backgroundscript2.js"></script>
+</div>
+</body>
 </html>
