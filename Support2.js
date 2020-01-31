@@ -8,7 +8,7 @@ P2.style.visibility = "hidden";
 var FN = document.getElementById("FN").value; 
 var LN = document.getElementById("LN").value; 
 
-
+    
 var IncAtt1 = document.getElementById("IncAtt1").value; 
 var IncAtt2 = document.getElementById("IncAtt2").value; 
 

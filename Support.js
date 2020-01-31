@@ -41,187 +41,46 @@ SubClassLabel.style.visibility = "hidden";
       opt.text = value;
       }
 
+    Prof1.style.visibility="visible";
+    Prof2.style.visibility="visible";
+
     if (Class=="Barbarian") {
-        Prof1.style.visibility="visible";
-        Prof2.style.visibility="visible";
+        
+        let Skill = ["Animal Handling", "Athletics", "Intimidation","Nature","Perception", "Survival"];
 
-    var opt = document.createElement("option");
-    CreOpt("Animal Handling");;
-    Prof1.add(opt);
-    Prof2.add(opt); 
-    
+        for (let i = 0; i < Skill.length; i++){
         var opt = document.createElement("option");
-     CreOpt("Athletics");
-    Prof1.add(opt);
-    Prof2.add(opt);  
-
-        var opt = document.createElement("option");
-    CreOpt("Intimidation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-     CreOpt("Nature");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-     CreOpt("Perception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-     CreOpt("Survival");
-    Prof1.add(opt);
-    Prof2.add(opt);     
+        CreOpt(Skill[i]);
+        Prof1.add(opt);
+        Prof2.add(opt);
+        }
     }
     else if(Class=="Bard"){
-        Prof1.style.visibility="visible";
-        Prof2.style.visibility="visible";
         Prof3.style.visibility="visible";
 
-//var Array Skill["Acrobatics"; "Animal Handling";];
+        let Skill = ["Acrobatics", "Animal Handling", "Arcana", "Athletics", "Deception", "History","Insight","Intimidation","Investigation","Medicine","Nature","Perception", "Peformance", "Persuasion", "Religion", "Sleight of Hand", "Stealth", "Survival"];
 
+        for (let i = 0; i < Skill.length; i++){
         var opt = document.createElement("option");
-        CreOpt("Acrobatics");
+        CreOpt(Skill[i]);
         Prof1.add(opt);
         Prof2.add(opt);
         Prof3.add(opt);
-
-        var opt = document.createElement("option");
-        CreOpt("Animal Handling");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-
-        var opt = document.createElement("option");
-        CreOpt("Arcana");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-        CreOpt("Athletics");
-        Prof1.add(opt);
-        Prof2.add(opt);  
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Deception");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("History");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Insight");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-        CreOpt("Intimidation");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Investigation");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Medicine");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Nature");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Perception");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Peformance");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Persuasion");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Religion");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Sleight of Hand");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Stealth");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
-        
-        var opt = document.createElement("option");
-        CreOpt("Survival");
-        Prof1.add(opt);
-        Prof2.add(opt);
-        Prof3.add(opt);
+    }
     }
 else if (Class == "Cleric") {
     SubClass.style.visibility = "visible";
     SubClassLabel.style.visibility = "visible";
     
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
-    
-        var opt = document.createElement("option");
-    CreOpt("History");
+    let Skill = ["History","Insight","Medicine", "Persuasion", "Religion"];
+
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Medicine");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Persuasion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
+    }
+
     SubClassLabel.innerHTML = "Domain";
     for (let i = 0; i < numbersC; i++) {
         if (i >= 6) {
@@ -230,95 +89,28 @@ else if (Class == "Cleric") {
     }
 }
 else if(Class=="Druid"){
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
+    
+    let Skill = [ "Animal Handling", "Arcana","Insight","Medicine","Nature","Perception", "Religion", "Survival"];
 
-        var opt = document.createElement("option");
-    CreOpt("Animal Handling");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Arcana");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Medicine");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Nature");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Perception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Survival");
-    Prof1.add(opt);
-    Prof2.add(opt); 
+    }
 }
 else if(Class == "Fighter") {
     SubClass.style.visibility = "visible";
     SubClassLabel.style.visibility = "visible";
 
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
+    let Skill = ["Acrobatics", "Animal Handling",  "Athletics", "History","Insight","Intimidation","Perception", "Survival"];
 
-        var opt = document.createElement("option"); 
-    CreOpt("Acrobatics");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Animal Handling");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Athletics");
-    Prof1.add(opt);
-    Prof2.add(opt);  
-    
-        var opt = document.createElement("option");
-    CreOpt("History");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Intimidation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Perception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Survival");
-    Prof1.add(opt);
-    Prof2.add(opt); 
+    }
 
     SubClassLabel.innerHTML = "Fighting Style";
     for (let i = 0; i < numbersC; i++) {
@@ -328,246 +120,69 @@ else if(Class == "Fighter") {
     }
 }
 else if(Class=="Monk"){
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
     
-        var opt = document.createElement("option");
-    CreOpt("Acrobatics");
-    Prof1.add(opt);
-    Prof2.add(opt);
+    let Skill = ["Acrobatics", "Athletics", "History","Insight", "Religion", "Stealth"];
 
-        var opt = document.createElement("option");
-    CreOpt("Athletics");
-    Prof1.add(opt);
-    Prof2.add(opt);  
-    
-        var opt = document.createElement("option");
-    CreOpt("History");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Stealth");
-    Prof1.add(opt);
-    Prof2.add(opt);
+}
 }
 else if(Class=="Paladin"){
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
+    
+    let Skill = ["Athletics","Insight","Intimidation","Medicine","Persuasion", "Religion"];
 
-        var opt = document.createElement("option");
-    CreOpt("Athletics");
-    Prof1.add(opt);
-    Prof2.add(opt);  
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Intimidation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Medicine");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Persuasion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
 }
+}
 else if(Class=="Ranger"){
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
     Prof3.style.visibility="visible";
 
-        var opt = document.createElement("option");
-    CreOpt("Animal Handling");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
+    let Skill = ["Animal Handling", "Athletics","Insight","Investigation","Nature","Perception", "Stealth", "Survival"];
 
-        var opt = document.createElement("option");
-    CreOpt("Athletics");
-    Prof1.add(opt);
-    Prof2.add(opt);  
-    Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
     Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Investigation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Nature");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Perception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Stealth");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Survival");
-    Prof1.add(opt);
-    Prof2.add(opt); 
-    Prof3.add(opt);
+}
 }
 else if(Class == "Rogue"){
     Prof1.style.visibility = "visible";
     Prof2.style.visibility = "visible";
-    Prof3.style.visibility = "visible";
-    Prof4.style.visibility = "visible";
 
-        var opt = document.createElement("option");
-    CreOpt("Acrobatics");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
+    Prof3.style.visibility="visible";
+    Prof4.style.visibility="visible";
+    let Skill = ["Acrobatics", "Athletics", "Deception", "Insight","Intimidation","Investigation","Perception", "Peformance", "Persuasion", "Sleight of Hand", "Stealth"];
 
-        var opt = document.createElement("option");
-    CreOpt("Athletics");
-    Prof1.add(opt);
-    Prof2.add(opt);  
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Deception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Intimidation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Investigation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Perception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Peformance");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Persuasion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Sleight of Hand");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    Prof3.add(opt);
-    Prof4.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Stealth");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
     Prof3.add(opt);
     Prof4.add(opt);
 }
+}
 else if (Class == "Sorcerrer") {
     SubClass.style.visibility = "visible";
     SubClassLabel.style.visibility = "visible";
-
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
-
-        var opt = document.createElement("option");
-    CreOpt("Arcana");
-    Prof1.add(opt);
-    Prof2.add(opt);
     
-        var opt = document.createElement("option");
-    CreOpt("Deception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
+    let Skill = ["Arcana","Deception","Insight","Intimidation", "Persuasion", "Religion"];
 
-        var opt = document.createElement("option");
-    CreOpt("Intimidation");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Persuasion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
+}
     SubClassLabel.innerHTML = "Sorcerous Origin";
     for (let i = 0; i < numbersC; i++) {
         if (i <= 6) {
@@ -582,43 +197,14 @@ else if (Class == "Warlock") {
     SubClass.style.visibility = "visible";
     SubClassLabel.style.visibility = "visible";
     
-    Prof1.style.visibility="visible";
-    Prof2.style.visibility="visible";
+    let Skill = [ "Arcana", "Deception", "History","Intimidation","Nature", "Religion"];
 
-        var opt = document.createElement("option");
-    CreOpt("Arcana");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Deception");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("History");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Intimidation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Investigation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-
-        var opt = document.createElement("option");
-    CreOpt("Nature");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
-    Prof1.add(opt);
-    Prof2.add(opt);
+    }
 
     SubClassLabel.innerHTML = "Patron";
     for (let i = 0; i < numbersC; i++) {
@@ -631,38 +217,15 @@ else if (Class == "Warlock") {
     }
 }
 else if(Class=="Wizard"){
-    Prof1.style.visibility = "visible";
-    Prof2.style.visibility = "visible";
+    
+    let Skill = ["Arcana", "History","Insight","Investigation","Medicine", "Religion"];
 
-        var opt = document.createElement("option");
-    CreOpt("Arcana");
+    for (let i = 0; i < Skill.length; i++){
+    var opt = document.createElement("option");
+    CreOpt(Skill[i]);
     Prof1.add(opt);
     Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("History");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Insight");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Investigation");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Medicine");
-    Prof1.add(opt);
-    Prof2.add(opt);
-    
-        var opt = document.createElement("option");
-    CreOpt("Religion");
-    Prof1.add(opt);
-    Prof2.add(opt);
+    }
 }
       else {
 }
@@ -822,7 +385,7 @@ var Prof1 = document.getElementById("Prof1").value;
 var Prof2 = document.getElementById("Prof2").value;
 var Prof3 = document.getElementById("Prof3").value;
 var Prof4 = document.getElementById("Prof4").value;
-var Prof5 = document.getElementById("Prof5").value;
+var Prof5 = document.getElementById("Prof5").value;     
 var Prof6 = document.getElementById("Prof6").value;
 
 var IncAtt1=document.getElementById("IncAtt1").value;

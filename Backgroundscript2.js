@@ -42,82 +42,11 @@ function CreOpt(value){
 opt.text = value;
 }
 
-var value="Knowledge";
-CreOpt(value);
+let races = ["Knowledge","Life","Light","Nature","Tempest","Trickery","War","Draconic Bloodline","Wild Magic","The Archfey","The Fiend","The Great Old One","Archery","Defense","Dueling","Great Weapon Fighting","Protection","Two-Weapon Fighting"];
+for (let i = 0; i<races.length; 1++){
+CreOpt(races[i]);
 SubClass.add(opt);
-var value="Life";
-CreOpt(value);
- SubClass.add(opt);
- 
-var value="Light";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Nature";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Tempest";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Trickery";  
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="War";
-CreOpt(value);
-  SubClass.add(opt);
-  
- 
-var value="Draconic Bloodline";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Wild Magic";
-CreOpt(value);
-  SubClass.add(opt);
-  
- 
-var value="The Archfey";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="The Fiend";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="The Great Old One";
-CreOpt(value);
-  SubClass.add(opt);
-  
- 
-var value="Archery"; 
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Defense"; 
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Dueling";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Great Weapon Fighting";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Protection";
-CreOpt(value);
-  SubClass.add(opt);
-
-var value="Two-Weapon Fighting"; 
-CreOpt(value);
- SubClass.add(opt);
-
- 
- 
+}
 var value="Hill Dwarf";
 CreOpt(value);
   SubRace.add(opt);
