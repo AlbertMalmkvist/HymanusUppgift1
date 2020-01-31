@@ -56,16 +56,16 @@ function CreOpt(value){
  opt.text = value;
 }
 
-let Att = ["Strenght","Dexterity","Constitution","Intelligence","Wisdom","Charisma"];
-let Attv = ["str","dex","con","int","wis","cha"];
-for (let i = 0; i < Att.length; i++){
+let inc = ["Strenght","Dexterity","Constitution","Intelligence","Wisdom","Charisma"];
+let incv = ["str","dex","con","int","wis","cha"];
+for (let i = 0; i < inc.length; i++){
   var opt = document.createElement("option");
-opt.value = Attv[i];
-opt.text = Att[i];
+opt.value = incv[i];
+opt.text = inc[i];
   IncAtt1.add(opt);
   var opt = document.createElement("option");
-opt.value = Attv[i];
-opt.text = Att[i];
+opt.value = incv[i];
+opt.text = inc[i];
   IncAtt2.add(opt);
 }
 
