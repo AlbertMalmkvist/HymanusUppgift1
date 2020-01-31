@@ -6,7 +6,7 @@
 <body>
 <h1 id="page1">DnD Sheet</h1><br>
 
-<label id="FNL" name="Label1">First Name</label>
+<label id="FNL" name="Label1" >First Name</label>
 <input type="text" name="Label1" id="FN" ><br>
 <label id="LNL" name="Label1">Last Name</label>
 <input type="text" name="Label1" id="LN" ><br>
@@ -151,8 +151,7 @@ var dex = document.getElementById("Dexterity");
 var con = document.getElementById("Constitution"); 
 var int = document.getElementById("Intelligence"); 
 var wis = document.getElementById("Wisdom"); 
-var cha = document.getElementById("Charisma");     
-
+var cha = document.getElementById("Charisma");   
 for (var i = 1; i<=18; i++){
 var opt = document.createElement('option');
 opt.value = i;
@@ -178,7 +177,19 @@ var opt = document.createElement('option');
 opt.value = i;
 opt.text = i;
 wis.appendChild(opt);
-}       
+}        
+
+let inc = [];
+let incv = [];
+let classes = [];
+let subclasses = [];
+let racest = [];
+let racesv = [];
+let subraces = [];
+let Bak = [];
+let Lang = [];
+let Skill = [];
+
 </script>
 <br>
 <button id="P2" onclick="Switch()">Change</button>

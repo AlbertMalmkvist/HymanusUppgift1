@@ -40,6 +40,7 @@ for (let i = 0; i < 100; i++){
  Prof6.remove(0);
  Class.remove(0);
  SubClass.remove(0);
+ Background.remove(0);
 Race.remove(0);
  SubRace.remove(0);
  IncAtt1.remove(0);
@@ -49,15 +50,15 @@ Race.remove(0);
  Lang3.remove(0);
  Lang4.remove(0);
  Lang5.remove(0);
-} 
+}    
 
 function CreOpt(value){
  opt.value = value;
  opt.text = value;
 }
 
-let inc = ["Strenght","Dexterity","Constitution","Intelligence","Wisdom","Charisma"];
-let incv = ["str","dex","con","int","wis","cha"];
+inc = ["Strenght","Dexterity","Constitution","Intelligence","Wisdom","Charisma"];
+incv = ["str","dex","con","int","wis","cha"];
 for (let i = 0; i < inc.length; i++){
   var opt = document.createElement("option");
 opt.value = incv[i];
@@ -69,7 +70,7 @@ opt.text = inc[i];
   IncAtt2.add(opt);
 }
 
-let Lang = ["Common","Dwarfish","Elvish","Gaint","Gnomish","Goblin","Halfling","Orc","Abyssal","Celestial","Deep Speech","Draconic","Infernal","Primordial","Sylvan","Undercommon"];
+Lang = ["Common","Dwarfish","Elvish","Gaint","Gnomish","Goblin","Halfling","Orc","Abyssal","Celestial","Deep Speech","Draconic","Infernal","Primordial","Sylvan","Undercommon"];
 for (let i = 0; i < Lang.length; i++){
   var opt = document.createElement("option");
 CreOpt(Lang[i]);
@@ -88,19 +89,19 @@ CreOpt(Lang[i]);
   Lang5.add(opt);
 }
 
-let classes = ["Barbarian","Bard","Cleric","Druid","Fighter","Monk","Paladin","Ranger","Rogue","Sorcerrer","Warlock","Wizard"];
+ classes = ["Barbarian","Bard","Cleric","Druid","Fighter","Monk","Paladin","Ranger","Rogue","Sorcerrer","Warlock","Wizard"];
 for (let i = 0; i < classes.length; i++){
   var opt = document.createElement("option");
   CreOpt(classes[i]);
   Class.add(opt);
 }
-let Bak = ["Acolyte","Charlatan","Criminal","Entertainer","Folk Hero","Guild Artisan","Hermit","Noble","Outlander","Sage","Sailor","Soldier","Urchin"];
+ Bak = ["Acolyte","Charlatan","Criminal","Entertainer","Folk Hero","Guild Artisan","Hermit","Noble","Outlander","Sage","Sailor","Soldier","Urchin"];
 for (let i = 0; i < Bak.length; i++){
   var opt = document.createElement("option");
   CreOpt(Bak[i]);
   Background.add(opt);
 }
-let Skill = ["Acrobatics", "Animal Handling", "Arcana", "Athletics", "Deception", "History","Insight","Intimidation","Investigation","Medicine","Nature","Perception", "Peformance", "Persuasion", "Religion", "Sleight of Hand", "Stealth", "Survival"];
+ Skill = ["Acrobatics", "Animal Handling", "Arcana", "Athletics", "Deception", "History","Insight","Intimidation","Investigation","Medicine","Nature","Perception", "Peformance", "Persuasion", "Religion", "Sleight of Hand", "Stealth", "Survival"];
 for (let i = 0; i < Skill.length; i++){
   var opt = document.createElement("option");
   CreOpt(Skill[i]);
@@ -110,8 +111,8 @@ for (let i = 0; i < Skill.length; i++){
   Prof6.add(opt);
 }
 
-let racest = ["Dwarf","Elf","Halfling","Human","Dragonborn","Gnome","Half-elf","Half-orc","Tiefling"];
-let racesv = ["Dwarf","Elf","Halfling","Human","Dragonborn","Gnome","Halfelf","Halforc","Tiefling"];
+ racest = ["Dwarf","Elf","Halfling","Human","Dragonborn","Gnome","Half-elf","Half-orc","Tiefling"];
+ racesv = ["Dwarf","Elf","Halfling","Human","Dragonborn","Gnome","Halfelf","Halforc","Tiefling"];
 for (let i = 0; i < racest.length; i++){
   var opt = document.createElement("option");
   opt.value = racest[i];
@@ -120,14 +121,14 @@ for (let i = 0; i < racest.length; i++){
 }
 
 
-let subclasses = ["Knowledge","Life","Light","Nature","Tempest","Trickery","War","Draconic Bloodline","Wild Magic","The Archfey","The Fiend","The Great Old One","Archery","Defense","Dueling","Great Weapon Fighting","Protection","Two-Weapon Fighting"];
+ subclasses = ["Knowledge","Life","Light","Nature","Tempest","Trickery","War","Draconic Bloodline","Wild Magic","The Archfey","The Fiend","The Great Old One","Archery","Defense","Dueling","Great Weapon Fighting","Protection","Two-Weapon Fighting"];
 for (var i = 0; i < subclasses.length; i++){
   var opt = document.createElement("option");
 CreOpt(subclasses[i]);
 SubClass.add(opt);
 }
 
-let subraces = ["Hill Dwarf","Mountain Dwarf","High Elf","Wood Elf","Dark Elf","Lightfoot","Stout","Black","Blue","Brass","Bronze","Copper","Gold","Green","Red","Silver","White","Rock Gnome","Forest Gnome"];
+ subraces = ["Hill Dwarf","Mountain Dwarf","High Elf","Wood Elf","Dark Elf","Lightfoot","Stout","Black","Blue","Brass","Bronze","Copper","Gold","Green","Red","Silver","White","Rock Gnome","Forest Gnome"];
 for (var i = 0; i<subraces.length; i++){
   var opt = document.createElement("option");
 CreOpt(subraces[i]);

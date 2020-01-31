@@ -420,6 +420,8 @@ news.innerHTML = "Your name is "+FN + " "+LN+". <br>\n"  +RaceText+ ClassText + 
 
 function Reset() { 
   news.style.visibility = "hidden";
+  news.innerHTML ="";
+  
   var Source = document.createElement("script");
   Source.src = "Backgroundscript2.js";
   Source.innerHTML = null;
